@@ -13,14 +13,15 @@ body{
 }
 
 :root{
-    --text-color:#333;
+    --primary-color:#0d6efd;
+    --secondry-text-color:#fff;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 120px;
+    padding: 30px 150px;
 }
 
 nav .logo img{
@@ -36,7 +37,7 @@ nav .links{
 
 nav .links a{
     text-decoration: none;
-    color: var(--text-color);
+    color: #333;
     position: relative;
 }
 
@@ -65,15 +66,46 @@ nav .sign-in-btn button{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    padding: 20px 120px;
+    gap: 200px;
+    padding: 20px 150px;
+}
+
+#home .left-side .title,
+#home .left-side .disc,
+#home .left-side .sub-title{
+    margin-top: 15px;
+}
+
+#home .left-side .title{
+    position: relative;
+}
+
+#home .left-side .title .blue-bar{
+    height: 40px;
+    width: 180px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    rotate: -1deg;
+    z-index: -1;
+    position: absolute;
+    left: 135px;
 }
 
 #home .left-side .title h1{
     font-weight: 600;
 }
 
+#home .left-side .title h1 span{
+    color: var(--secondry-text-color);
+    font-weight: 600;
+    font-size: 28px;
+    margin-left: 10px;
+}
+
 #home .left-side .sign-up-btn button{
     padding: 8px 15px;
 }
 
+#home .right-side img{
+    
+}
