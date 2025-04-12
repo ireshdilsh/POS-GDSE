@@ -57,7 +57,7 @@ nav .links a:hover::after{
     transform: scale(1);
 }
 
-nav .sign-up-btn button{
+nav .sign-in-btn button{
     padding: 10px 15px;
 }
 
@@ -68,3 +68,12 @@ nav .sign-up-btn button{
     flex-direction: column;
     padding: 20px 120px;
 }
+
+#home .left-side .title h1{
+    font-weight: 600;
+}
+
+#home .left-side .sign-up-btn button{
+    padding: 8px 15px;
+}
+
