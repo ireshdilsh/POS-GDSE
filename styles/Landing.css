@@ -16,19 +16,15 @@ body{
     --text-color:#333;
 }
 
-#home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px 120px;
-}
-
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 120px;
+    padding: 30px 120px;
+}
+
+nav .logo img{
+    height: 60px;
 }
 
 nav .links{
@@ -63,4 +59,12 @@ nav .links a:hover::after{
 
 nav .sign-up-btn button{
     padding: 10px 15px;
+}
+
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 120px;
 }
