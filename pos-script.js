@@ -1,1 +1,0 @@
-console.log("Pos front page is Worked !");
