@@ -5,8 +5,62 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     color: #333;
+    font-size: 13px;
 }
 
 body{
     overflow-x: hidden;
+}
+
+:root{
+    --text-color:#333;
+}
+
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 120px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 120px;
+}
+
+nav .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+nav .links a{
+    text-decoration: none;
+    color: var(--text-color);
+    position: relative;
+}
+
+nav .links a::after{
+    content: '';
+    height: 1.5px;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    border-radius: 50px;
+    transform: scale(0);
+    transition: 0.3s;
+}
+
+nav .links a:hover::after{
+    transform: scale(1);
+}
+
+nav .sign-up-btn button{
+    padding: 8px 10px;
 }
