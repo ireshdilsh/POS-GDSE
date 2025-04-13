@@ -326,3 +326,65 @@ nav .sign-in-btn button{
 #services .service-body .right-side img:hover{
     transform: scale(1.05);
 }
+
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 60px 150px;
+}
+
+#contact h1{
+    font-weight: 600;
+}
+
+#contact .contact-body{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+#contact .contact-body .left-side{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 30px;
+}
+
+#contact .contact-body .left-side img{
+    width: 150px;
+}
+
+#contact .contact-body .left-side p{
+    text-align: justify;
+}
+
+#contact .contact-body .middel-side{
+    width: 400px;
+}
+
+#contact .contact-body .middel-side p{
+    margin-top: 17px;
+}
+
+#contact .contact-body .right-side{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 360px;
+    border: 1px solid #fafafa;
+    border-radius: 8px;
+    border-width: 2px;
+}
+
+#contact .contact-body .right-side .submit-btn button{
+    padding: 8px 15px;
+}
+
+#contact .contact-body .right-side input{
+    height: 40px;
+}
