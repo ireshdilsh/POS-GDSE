@@ -64,9 +64,9 @@ nav .sign-in-btn button{
 
 #home{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 200px;
+    /* gap: 200px; */
     padding: 20px 150px;
 }
 
@@ -103,9 +103,40 @@ nav .sign-in-btn button{
 }
 
 #home .left-side .sign-up-btn button{
-    padding: 8px 15px;
+    padding: 10px 17px;
+    margin-top: 15px;
 }
 
-#home .right-side img{
-    
+#home .left-side .icons{
+    display: flex;
+    gap: 10px;
+}
+
+#home .left-side .icons img{
+    height: 25px;
+}
+
+#home .right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#home .right-side .set-1{
+    display: flex;
+    gap: 10px;
+}
+
+#home .right-side .set-1 img{
+    height: 180px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#home .right-side .set-2 img{
+    margin-top: 10px;
+    height: 230px;
+    overflow: hidden;
+    border-radius: 10px;
 }
