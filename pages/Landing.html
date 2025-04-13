@@ -27,11 +27,12 @@
             <a href="#contact">Contact Us</a>
         </div>
         <div class="sign-in-btn">
-            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">Find My Property</button>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#signinModal" class="btn btn-primary">Find My Property</button>
         </div>
     </nav>
 
-    <div id="exampleModal" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Sign In Modal -->
+    <div id="signinModal" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -48,6 +49,26 @@
             </div>
         </div>
     </div>
+
+    <!-- Sign Up Modal -->
+    <div id="signupModal" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create My GINYARD Account</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Sign In</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <section id="home">
         <div class="left-side">
@@ -69,7 +90,7 @@
                 <img src="https://img.icons8.com/?size=100&id=13983&format=png&color=000000" alt="youtube-logo">
             </div>
             <div class="sign-up-btn">
-                <button type="button" class="btn btn-outline-primary">Create My Account</button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#signupModal" class="btn btn-outline-primary">Create My Account</button>
             </div>
         </div>
         <div class="right-side">
