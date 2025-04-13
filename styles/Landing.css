@@ -217,3 +217,59 @@ nav .sign-in-btn button{
     margin-top: 15px;
     text-align: justify;
 }
+
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 60px 150px;
+}
+
+#about h1{
+    font-weight: 600;
+}
+
+#about .about-body{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#about .about-body .left-side p{
+    text-align: justify;
+}
+
+#about .about-body .left-side p span{
+    font-weight: 600;
+}
+
+#about .about-body .right-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .about-body .right-side .double-img{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#about .about-body .right-side .double-img img{
+    height: 195px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#about .about-body .right-side img{
+    height: 400px;
+    overflow: hidden;
+    margin-left: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
