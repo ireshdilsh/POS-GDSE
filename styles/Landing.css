@@ -264,12 +264,65 @@ nav .sign-in-btn button{
     overflow: hidden;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transition: 0.4s;
 }
 
 #about .about-body .right-side img{
+    transition: 0.4s;
     height: 400px;
     overflow: hidden;
     margin-left: 10px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#about .about-body .right-side img:hover{
+    transform: scale(1.05);
+}
+
+#services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 60px 150px;
+    background-color: var(--section-bg-color);
+}
+
+#services h1{
+    font-weight: 600;
+}
+
+#services .service-body{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+#services .service-body .left-side p span{
+    font-weight: 600;
+}
+
+#services .service-body .left-side ul li{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#services .service-body .left-side p{
+    text-align: justify;
+}
+
+#services .service-body .right-side img{
+    transition: 0.4s;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#services .service-body .right-side img:hover{
+    transform: scale(1.05);
 }
