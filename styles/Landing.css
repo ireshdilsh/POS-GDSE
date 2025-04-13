@@ -168,48 +168,34 @@ nav .sign-in-btn button{
 #properties .property-cards .set-1,
 #properties .property-cards .set-2{
     display: flex;
-    gap: 15px;
+    gap: 15px;    
 }
 
-#properties .property-cards .card-1,
-#properties .property-cards .card-2,
-#properties .property-cards .card-3,
-#properties .property-cards .card-4{
+#properties .property-cards .card{
     transition: 0.4s;
     padding: 25px;
     background-color: #fff;
+    border: none;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
-#properties .property-cards .card-1:hover,
-#properties .property-cards .card-2:hover,
-#properties .property-cards .card-3:hover,
-#properties .property-cards .card-4:hover{
+#properties .property-cards .card:hover{
     transform: scale(1.05);
 }
 
-#properties .property-cards .card-1 img,
-#properties .property-cards .card-2 img,
-#properties .property-cards .card-3 img,
-#properties .property-cards .card-4 img{
+#properties .property-cards .card img{
     height: 150px;
     overflow: hidden;
     border-radius: 8px;
 }
 
-#properties .property-cards .card-1 h5,
-#properties .property-cards .card-2 h5,
-#properties .property-cards .card-3 h5,
-#properties .property-cards .card-4 h5{
+#properties .property-cards .card h5{
     margin-top: 15px;
     font-weight: 600;
 }
 
-#properties .property-cards .card-1 hr,
-#properties .property-cards .card-2 hr,
-#properties .property-cards .card-3 hr,
-#properties .property-cards .card-4 hr{
+#properties .property-cards .card hr{
     border: none;
     border-radius: 180px;
     width: 100%;
@@ -217,10 +203,7 @@ nav .sign-in-btn button{
     background-color: #333;
 }
 
-#properties .property-cards .card-1 p,
-#properties .property-cards .card-2 p,
-#properties .property-cards .card-3 p,
-#properties .property-cards .card-4 p{
+#properties .property-cards .card p{
     margin-top: 15px;
     text-align: justify;
 }
@@ -457,3 +440,4 @@ footer .top-side .left-side p{
     text-align: justify;
     margin-top: 25px;
 }
+
