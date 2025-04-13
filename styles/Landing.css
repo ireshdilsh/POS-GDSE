@@ -388,3 +388,65 @@ nav .sign-in-btn button{
 #contact .contact-body .right-side input{
     height: 40px;
 }
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 60px 150px;
+    background-color: var(--section-bg-color);
+}
+
+footer .bottom-side{
+    margin-top: 100px;
+}
+
+footer .bottom-side p{
+    font-weight: 600;
+    font-size: 12px;
+}
+
+footer .top-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+footer .right-side input{
+    height: 40px;
+    width: 300px;
+}
+
+footer .right-side p span{
+    font-weight: 600;
+}
+
+footer .top-side .right-side .subcribe-btn button{
+    padding: 8px 15px;
+}
+
+footer .top-side .middle-side{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+}
+
+footer .top-side .middle-side a{
+    text-decoration: none;
+    color: #333;
+}
+
+footer .top-side .left-side img{
+    width: 120px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+footer .top-side .left-side p{
+    text-align: justify;
+    margin-top: 25px;
+}
