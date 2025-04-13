@@ -27,9 +27,27 @@
             <a href="#contact">Contact Us</a>
         </div>
         <div class="sign-in-btn">
-            <button type="button" class="btn btn-primary">Find My Property</button>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">Find My Property</button>
         </div>
     </nav>
+
+    <div id="exampleModal" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Login My GINYARD Account</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Sign In</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section id="home">
         <div class="left-side">
