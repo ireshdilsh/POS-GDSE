@@ -6,7 +6,8 @@
     box-sizing: border-box;
     font-family: "Kalam", cursive;
     font-style: normal;
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 :root{
@@ -20,7 +21,8 @@ nav {
      justify-content: center;
      align-items: center;
      gap: 150px;
-     margin-top: 20px;
+     background-color: #fafafa;
+     padding: 50px 0 0 0;
 }
 
 nav .logo img{
@@ -58,15 +60,136 @@ nav .links a:hover::after{
 
 }
 
-nav .sign-in-btn button{
+nav .sign-up-btn button{
     background-color: #333;
     color: var(--secondry-text-color);
-    padding: 15px 50px;
+    padding: 10px 30px;
     border-radius: 5px;
     border: none;
 }
 
-nav .sign-in-btn button:hover{
+nav .sign-up-btn button:hover{
     cursor: pointer;
     background-color: var(--bg-color);
+}
+
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 120px;
+    gap: 100px;
+    background-color: #fafafa;
+}
+
+#home .left-side .title h1{
+    font-weight: 600;
+}
+
+#home .left-side .sign-in-btn button{
+    border: none;
+    padding: 9px 17px;
+    background-color: #333;
+    border-radius: 4px;
+    margin-top: 15px;
+    color: var(--secondry-text-color);
+}
+
+#home .left-side .sign-in-btn button:hover{
+    cursor: pointer;
+    background-color: var(--bg-color);
+}
+
+#shop{
+    padding: 80px 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#shop .title h2{
+    font-weight: 600;
+}
+
+#shop .discription p{
+    text-align: center;
+}
+
+#shop .selection-btns{
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+#shop .selection-btns button{
+    border: 1px solid #333;
+    height: 35px;
+    width: 100px;
+    border-radius: 20px;
+    color: var(--primary-text-color);
+    background-color: #fff;
+}
+
+
+#shop .selection-btns button:hover{
+    background-color: #f6f6f6;
+}
+
+#shop .selection-btns #iMacs-btn{
+    background-color: #333;
+    color: var(--secondry-text-color);
+}
+
+#shop #iMacs-section .cards{
+    margin-top: 20px;
+}
+
+#shop #iMacs-section .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#shop #iMacs-section .cards .set-1,
+#shop #iMacs-section .cards .set-2{
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+#shop #iMacs-section .cards .set-1 .card-1,
+#shop #iMacs-section .cards .set-1 .card-2,
+#shop #iMacs-section .cards .set-1 .card-3,
+#shop #iMacs-section .cards .set-2 .card-1,
+#shop #iMacs-section .cards .set-2 .card-2,
+#shop #iMacs-section .cards .set-2 .card-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    padding: 20px;
+    border: 2px solid #fafafa ;
+    border-radius: 4px;
+}
+
+#shop #iMacs-section .cards .set-1 .card-1 h5,
+#shop #iMacs-section .cards .set-1 .card-2 h5,
+#shop #iMacs-section .cards .set-1 .card-3 h5,
+#shop #iMacs-section .cards .set-2 .card-1 h5,
+#shop #iMacs-section .cards .set-2 .card-2 h5,
+#shop #iMacs-section .cards .set-2 .card-3 h5{
+    margin-top: -20px;
+    font-weight: 600;
+}
+
+#shop #iMacs-section .cards .set-1 .card-1 p,
+#shop #iMacs-section .cards .set-1 .card-2 p,
+#shop #iMacs-section .cards .set-1 .card-3 p,
+#shop #iMacs-section .cards .set-2 .card-1 p,
+#shop #iMacs-section .cards .set-2 .card-2 p,
+#shop #iMacs-section .cards .set-2 .card-3 p{
+    margin-top: 10px;
 }
