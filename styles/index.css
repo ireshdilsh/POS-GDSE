@@ -202,6 +202,7 @@ nav .sign-up-btn button:hover{
 #shop #iMacs-section .cards .set-2 .card-2 p,
 #shop #iMacs-section .cards .set-2 .card-3 p{
     margin-top: 10px;
+    text-align: justify;
 }
 
 #shop #iMacs-section .cards .set-1 .card-1 h5{
@@ -327,6 +328,7 @@ nav .sign-up-btn button:hover{
 #shop #iPhones-section .cards .set-2 .cards-2 p,
 #shop #iPhones-section .cards .set-2 .cards-3 p{
     margin-top: 10px;
+    text-align: justify;
 }
 
 #shop #MacBooks-section .cards{
@@ -394,6 +396,16 @@ nav .sign-up-btn button:hover{
 #shop #MacBooks-section .cards .set-2 .card-2 h5,
 #shop #MacBooks-section .cards .set-2 .card-3 h5{
     font-weight: 600;
+}
+
+
+#shop #MacBooks-section .cards .set-1 .card-1 p,
+#shop #MacBooks-section .cards .set-1 .card-2 p,
+#shop #MacBooks-section .cards .set-1 .card-3 p,
+#shop #MacBooks-section .cards .set-2 .card-1 p,
+#shop #MacBooks-section .cards .set-2 .card-2 p,
+#shop #MacBooks-section .cards .set-2 .card-3 p{
+    text-align: justify;
 }
 
 #shop #iPads-section .cards{
@@ -471,6 +483,14 @@ nav .sign-up-btn button:hover{
     font-weight: 600;
 }
 
+
+#shop #iPads-section .cards .set-1 .card-1 p,
+#shop #iPads-section .cards .set-1 .card-2 p,
+#shop #iPads-section .cards .set-1 .card-3 p,
+#shop #iPads-section .cards .set-2 .card-1 p{
+    text-align: justify;
+}
+
 #shop #Watches-section .cards{
     display: flex;
     justify-content: center;
@@ -522,4 +542,18 @@ nav .sign-up-btn button:hover{
 #shop #Watches-section .cards .set-1 .card-3 p,
 #shop #Watches-section .cards .set-2 .card-1 p{
     margin-top: 10px;
+    text-align: justify;
+}
+
+#Offers-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 120px;
+    background-color: #fafafa;
+}
+
+#Offers-section h1{
+    font-weight: 600;
 }
