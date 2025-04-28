@@ -158,6 +158,28 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
 
+        <script>
+
+            $('#iPhones-section').css('display','none');
+
+            $('#iPhones-btn').on('click',()=>{
+                $('#iPhones-section').css('display','block');
+                $('#iMacs-section').css('display','none');
+                $('#iPhones-btn').css('color','#fcfcfc');
+                $('#iPhones-btn').css('background-color','#333');
+                $('#iMacs-btn').css('color','#333');
+                $('#iMacs-btn').css('background-color','#fff');
+            })
+
+            $('#iMacs-btn').on('click',()=>{
+                $('#iPhones-section').css('display','none');
+                $('#iMacs-section').css('display','block');
+                $('#iMacs-btn').css('color','#fcfcfc');
+                $('#iMacs-btn').css('background-color','#333');
+                $('#iPhones-btn').css('color','#333');
+                $('#iPhones-btn').css('background-color','#fff');
+            })
+        </script>
 </body>
 
 </html>
