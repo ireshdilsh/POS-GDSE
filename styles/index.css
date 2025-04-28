@@ -329,4 +329,70 @@ nav .sign-up-btn button:hover{
     margin-top: 10px;
 }
 
+#shop #MacBooks-section .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#shop #MacBooks-section .cards .set-1,
+#shop #MacBooks-section .cards .set-2{
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+#shop #MacBooks-section .cards .set-1 .card-1,
+#shop #MacBooks-section .cards .set-1 .card-2,
+#shop #MacBooks-section .cards .set-1 .card-3,
+#shop #MacBooks-section .cards .set-2 .card-1,
+#shop #MacBooks-section .cards .set-2 .card-2,
+#shop #MacBooks-section .cards .set-2 .card-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    padding: 30px;
+    border: 2px solid #fafafa ;
+    border-radius: 5px;
+    transition: 0.4s;
+    position: relative;
+}
+
+#shop #MacBooks-section .cards .set-1 .card-1:hover,
+#shop #MacBooks-section .cards .set-1 .card-2:hover,
+#shop #MacBooks-section .cards .set-1 .card-3:hover,
+#shop #MacBooks-section .cards .set-2 .card-1:hover,
+#shop #MacBooks-section .cards .set-2 .card-2:hover,
+#shop #MacBooks-section .cards .set-2 .card-3:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+#shop #MacBooks-section .cards .set-1 .card-1 img{
+    height: 180px;
+    margin-top: 40px;
+}
+
+#shop #MacBooks-section .cards .set-1 .card-2 img,
+#shop #MacBooks-section .cards .set-1 .card-3 img,
+#shop #MacBooks-section .cards .set-2 .card-1 img,
+#shop #MacBooks-section .cards .set-2 .card-2 img,
+#shop #MacBooks-section .cards .set-2 .card-3 img{
+    height: 250px;
+}
+
+#shop #MacBooks-section .cards .set-1 .card-1 h5{
+    margin-top: 30px;
+}
+
+#shop #MacBooks-section .cards .set-1 .card-1 h5,
+#shop #MacBooks-section .cards .set-1 .card-2 h5,
+#shop #MacBooks-section .cards .set-1 .card-3 h5,
+#shop #MacBooks-section .cards .set-2 .card-1 h5,
+#shop #MacBooks-section .cards .set-2 .card-2 h5,
+#shop #MacBooks-section .cards .set-2 .card-3 h5{
+    font-weight: 600;
+}
 

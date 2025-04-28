@@ -130,18 +130,57 @@
                     </div>
                     <div class="set-2">
                         <div class="cards-1">
-                            <img src="../assets/images__15_-removebg-preview.png" alt="">
-                            <h5>SE 2 (2023)</h5>
+                            <img src="../assets/images__11_-removebg-preview.png" alt="">
+                            <h5>14 Pro Max(2023)</h5>
                             <p>Experience stunning visuals and lightning-fast performance with the Apple M1 Chip.This 24-inch iMac is perfect for work,play and creativity in a vibrant blue finish.</p>
                         </div>
                         <div class="cards-2">
-                            <img src="../assets/images__15_-removebg-preview.png" alt="">
-                            <h5>SE 2 (2023)</h5>
+                            <img src="../assets/images__14_-removebg-preview.png" alt="">
+                            <h5>15 Pro Max(2023)</h5>
                             <p>Experience stunning visuals and lightning-fast performance with the Apple M1 Chip.This 24-inch iMac is perfect for work,play and creativity in a vibrant blue finish.</p>
                         </div>
                         <div class="cards-3">
                             <img src="../assets/images__16_-removebg-preview.png" alt="">
                             <h5>iPhone 11 Pro Max(2023)</h5>
+                            <p>Experience stunning visuals and lightning-fast performance with the Apple M1 Chip.This 24-inch iMac is perfect for work,play and creativity in a vibrant blue finish.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="MacBooks-section">
+                <div class="cards">
+                    <div class="set-1">
+                        <div class="card-1">
+                            <img src="../assets/images__1_-removebg-preview.png" alt="">
+                            <h5>MacBook Air i7(2023)</h5>
+                            <p>Experience stunning visuals and lightning-fast performance with the Apple M1 Chip.This 24-inch iMac is perfect for work,play and creativity in a vibrant blue finish.</p>
+                        </div>
+                        <div class="card-2">
+                            <img src="../assets/images__2_-removebg-preview.png" alt="">
+                            <h5>MacBook Pro M1(2024)</h5>
+                            <p>Experience stunning visuals and lightning-fast performance with the Apple M1 Chip.This 24-inch iMac is perfect for work,play and creativity in a vibrant blue finish.</p>
+                        </div>
+                        <div class="card-3">
+                            <img src="../assets/images__3_-removebg-preview.png" alt="">
+                            <h5>MacBook Pro M2(2025)</h5>
+                            <p>Experience stunning visuals and lightning-fast performance with the Apple M1 Chip.This 24-inch iMac is perfect for work,play and creativity in a vibrant blue finish.</p>
+                        </div>
+                    </div>
+                    <div class="set-2">
+                        <div class="card-1">
+                            <img src="../assets/download-removebg-preview.png" alt="">
+                            <h5>MacBook Air i7(2023)</h5>
+                            <p>Experience stunning visuals and lightning-fast performance with the Apple M1 Chip.This 24-inch iMac is perfect for work,play and creativity in a vibrant blue finish.</p>
+                        </div>
+                        <div class="card-2">
+                            <img src="../assets/images-removebg-preview.png" alt="">
+                            <h5>MacBook Pro M3(2024)</h5>
+                            <p>Experience stunning visuals and lightning-fast performance with the Apple M1 Chip.This 24-inch iMac is perfect for work,play and creativity in a vibrant blue finish.</p>
+                        </div>
+                        <div class="card-3">
+                            <img src="../assets/images__2_-removebg-preview.png" alt="">
+                            <h5>MacBook Pro M4(2025)</h5>
                             <p>Experience stunning visuals and lightning-fast performance with the Apple M1 Chip.This 24-inch iMac is perfect for work,play and creativity in a vibrant blue finish.</p>
                         </div>
                     </div>
@@ -161,6 +200,7 @@
         <script>
 
             $('#iPhones-section').css('display','none');
+            $('#MacBooks-section').css('display','none');
 
             $('#iPhones-btn').on('click',()=>{
                 $('#iPhones-section').css('display','block');
@@ -169,6 +209,9 @@
                 $('#iPhones-btn').css('background-color','#333');
                 $('#iMacs-btn').css('color','#333');
                 $('#iMacs-btn').css('background-color','#fff');
+                $('#MacBooks-section').css('display','none');
+                $('#MacBooks-btn').css('color','#333');
+                $('#MacBooks-btn').css('background-color','#fff');
             })
 
             $('#iMacs-btn').on('click',()=>{
@@ -178,7 +221,23 @@
                 $('#iMacs-btn').css('background-color','#333');
                 $('#iPhones-btn').css('color','#333');
                 $('#iPhones-btn').css('background-color','#fff');
+                $('#MacBooks-section').css('display','none');
+                $('#MacBooks-btn').css('color','#333');
+                $('#MacBooks-btn').css('background-color','#fff');
             })
+
+            $('#MacBooks-btn').on('click',()=>{
+                $('#MacBooks-section').css('display','block');
+                $('#iPhones-section').css('display','none');
+                $('#iMacs-section').css('display','none');
+                $('#MacBooks-btn').css('color','#fcfcfc');
+                $('#MacBooks-btn').css('background-color','#333');
+                $('#iPhones-btn').css('color','#333');
+                $('#iPhones-btn').css('background-color','#fff');
+                $('#iMacs-btn').css('color','#333');
+                $('#iMacs-btn').css('background-color','#fff');
+            })
+
         </script>
 </body>
 
