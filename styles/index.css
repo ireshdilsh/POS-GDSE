@@ -568,3 +568,74 @@ nav .sign-up-btn button:hover{
 #about h1{
     font-weight: 600;
 }
+
+#about .about-body{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+#about .about-body .left-side{
+    width: 50%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#about .about-body .left-side p{
+    text-align: justify;
+}
+
+#about .about-body .service-cards{
+    display: flex;
+    flex-direction: column;
+}
+
+#about .about-body .service-cards .card-1,
+#about .about-body .service-cards .card-2,
+#about .about-body .service-cards .card-3,
+#about .about-body .service-cards .card-4{
+    padding: 25px;
+    border: 1.8px solid #fafafa;
+    margin-top: 15px;
+    border-radius: 5px;
+    transition: 0.4s;
+    position: relative;
+}
+
+#about .about-body .service-cards .card-1 .color-bar,
+#about .about-body .service-cards .card-2 .color-bar,
+#about .about-body .service-cards .card-3 .color-bar,
+#about .about-body .service-cards .card-4 .color-bar{
+    background-color: #333333b4;
+    height: 5px;
+    width: 22.6%;
+    rotate: 90deg;
+    position: absolute;
+    left: -70px;
+    top: 66px;
+    border-radius:0 0 5px 5px ;
+}
+
+#about .about-body .service-cards .card-1 h5,
+#about .about-body .service-cards .card-2 h5,
+#about .about-body .service-cards .card-3 h5,
+#about .about-body .service-cards .card-4 h5{
+    font-weight: 600;
+}
+
+#about .about-body .service-cards .card-1 p,
+#about .about-body .service-cards .card-2 p,
+#about .about-body .service-cards .card-3 p,
+#about .about-body .service-cards .card-4 p{
+    margin-top: 10px;
+}
+
+#about .about-body .service-cards .card-1:hover,
+#about .about-body .service-cards .card-2:hover,
+#about .about-body .service-cards .card-3:hover,
+#about .about-body .service-cards .card-4:hover{
+    transform: scale(1.05);
+}
