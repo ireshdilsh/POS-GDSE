@@ -396,3 +396,130 @@ nav .sign-up-btn button:hover{
     font-weight: 600;
 }
 
+#shop #iPads-section .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#shop #iPads-section .cards .set-1,
+#shop #iPads-section .cards .set-2{
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+#shop #iPads-section .cards .set-1 .card-1,
+#shop #iPads-section .cards .set-1 .card-2,
+#shop #iPads-section .cards .set-1 .card-3,
+#shop #iPads-section .cards .set-2 .card-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    padding: 30px;
+    border: 2px solid #fafafa ;
+    border-radius: 5px;
+    transition: 0.4s;
+    position: relative;
+}
+
+#shop #iPads-section .cards .set-1 .card-1:hover,
+#shop #iPads-section .cards .set-1 .card-2:hover,
+#shop #iPads-section .cards .set-1 .card-3:hover,
+#shop #iPads-section .cards .set-2 .card-1:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+#shop #iPads-section .cards .set-1 .card-1 img{
+    height: 270px;
+    margin-top: -70px;
+}
+
+#shop #iPads-section .cards .set-1 .card-2 img{
+    height: 225px;
+    margin-top: -20px;
+}
+
+#shop #iPads-section .cards .set-1 .card-3 img{
+    height: 270px;
+    margin-top: -50px;
+}
+
+#shop #iPads-section .cards .set-2 .card-1 img{
+    height: 220px;
+}
+
+#shop #iPads-section .cards .set-1 .card-1 h5{
+    margin-top: 15px;
+}
+
+#shop #iPads-section .cards .set-1 .card-2 h5{
+    margin-top: 10px;
+}
+
+#shop #iPads-section .cards .set-2 .card-1 h5{
+    margin-top: 30px;
+}
+
+#shop #iPads-section .cards .set-1 .card-1 h5,
+#shop #iPads-section .cards .set-1 .card-2 h5,
+#shop #iPads-section .cards .set-1 .card-3 h5,
+#shop #iPads-section .cards .set-2 .card-1 h5{
+    font-weight: 600;
+}
+
+#shop #Watches-section .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#shop #Watches-section .cards .set-1,
+#shop #Watches-section .cards .set-2{
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+#shop #Watches-section .cards .set-1 .card-1,
+#shop #Watches-section .cards .set-1 .card-2,
+#shop #Watches-section .cards .set-1 .card-3,
+#shop #Watches-section .cards .set-2 .card-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+    width: 350px;
+    padding: 30px;
+    border: 2px solid #fafafa ;
+    border-radius: 5px;
+    transition: 0.4s;
+    position: relative;
+}
+
+#shop #Watches-section .cards .set-1 .card-1:hover,
+#shop #Watches-section .cards .set-1 .card-2:hover,
+#shop #Watches-section .cards .set-1 .card-3:hover,
+#shop #Watches-section .cards .set-2 .card-1:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+#shop #Watches-section .cards .set-1 .card-1 h5,
+#shop #Watches-section .cards .set-1 .card-2 h5,
+#shop #Watches-section .cards .set-1 .card-3 h5,
+#shop #Watches-section .cards .set-2 .card-1 h5{
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+
+#shop #Watches-section .cards .set-1 .card-1 p,
+#shop #Watches-section .cards .set-1 .card-2 p,
+#shop #Watches-section .cards .set-1 .card-3 p,
+#shop #Watches-section .cards .set-2 .card-1 p{
+    margin-top: 10px;
+}

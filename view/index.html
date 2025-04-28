@@ -188,7 +188,61 @@
             </section>
 
             <section id="iPads-section">
-                
+                <div class="cards">
+                    <div class="set-1">
+                        <div class="card-1">
+                            <img src="../assets/ipad-1.png" alt="">
+                            <h5>iPad Pro 12.9-inch (2022)</h5>
+                            <p>Experience stunning visuals and lightning-fast performance with the Apple M1 Chip.This 24-inch iMac is perfect for work,play and creativity in a vibrant blue finish.</p>
+                        </div>
+                        <div class="card-2">
+                            <img src="../assets/ipad-2.png" alt="">
+                            <h5>iPad Air (2024)</h5>
+                            <p>Experience stunning visuals and lightning-fast performance with the Apple M1 Chip.This 24-inch iMac is perfect for work,play and creativity in a vibrant blue finish.</p>
+                        </div>
+                        <div class="card-3">
+                            <img src="../assets/ipad-3.png" alt="">
+                            <h5>iPad mini (2021)</h5>
+                            <p>Experience stunning visuals and lightning-fast performance with the Apple M1 Chip.This 24-inch iMac is perfect for work,play and creativity in a vibrant blue finish.</p>
+                        </div>
+                    </div>
+                    <div class="set-2">
+                        <div class="card-1">
+                            <img src="../assets/ipad-4.png" alt="">
+                            <h5>iPad (10th generation, 2022)</h5>
+                            <p>Experience stunning visuals and lightning-fast performance with the Apple M1 Chip.This 24-inch iMac is perfect for work,play and creativity in a vibrant blue finish.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="Watches-section">
+                <div class="cards">
+                    <div class="set-1">
+                        <div class="card-1">
+                            <img src="../assets/watch-1.png" alt="">
+                            <h5>Apple Watch Series 6</h5>
+                            <p>Experience stunning visuals and lightning-fast performance with the Apple M1 Chip.This 24-inch iMac is perfect for work,play and creativity in a vibrant blue finish.</p>
+                        </div>
+                        <div class="card-2">
+                            <img src="../assets/watch-2.png" alt="">
+                            <h5>Apple Watch Series 7</h5>
+                            <p>Experience stunning visuals and lightning-fast performance with the Apple M1 Chip.This 24-inch iMac is perfect for work,play and creativity in a vibrant blue finish.</p>
+                        </div>
+                        <div class="card-3">
+                            <img src="../assets/watch-3.png" alt="">
+                            <h5>Apple Watch Series 8</h5>
+                            <p>Experience stunning visuals and lightning-fast performance with the Apple M1 Chip.This 24-inch iMac is perfect for work,play and creativity in a vibrant blue finish.</p>
+                        </div>
+                    </div>
+                    <div class="set-2">
+                        <div class="card-1">
+                            <img src="../assets/watch-4.png" alt="">
+                            <h5>Apple Watch Series 9</h5>
+                            <p>Experience stunning visuals and lightning-fast performance with the Apple M1 Chip.This 24-inch iMac is perfect for work,play and creativity in a vibrant blue finish.</p>
+                        </div>
+                    </div>
+                </div>
             </section>
         </section>
 
@@ -205,10 +259,12 @@
 
             $('#iPhones-section').css('display','none');
             $('#MacBooks-section').css('display','none');
+            $('#iPads-section').css('display','none');
 
             $('#iPhones-btn').on('click',()=>{
                 $('#iPhones-section').css('display','block');
                 $('#iMacs-section').css('display','none');
+                $('#iPads-section').css('display','none');
                 $('#iPhones-btn').css('color','#fcfcfc');
                 $('#iPhones-btn').css('background-color','#333');
                 $('#iMacs-btn').css('color','#333');
@@ -216,11 +272,14 @@
                 $('#MacBooks-section').css('display','none');
                 $('#MacBooks-btn').css('color','#333');
                 $('#MacBooks-btn').css('background-color','#fff');
+                $('#iPads-btn').css('color','#333');
+                $('#iPads-btn').css('background-color','#fff');
             })
 
             $('#iMacs-btn').on('click',()=>{
                 $('#iPhones-section').css('display','none');
                 $('#iMacs-section').css('display','block');
+                $('#iPads-section').css('display','none');
                 $('#iMacs-btn').css('color','#fcfcfc');
                 $('#iMacs-btn').css('background-color','#333');
                 $('#iPhones-btn').css('color','#333');
@@ -228,18 +287,38 @@
                 $('#MacBooks-section').css('display','none');
                 $('#MacBooks-btn').css('color','#333');
                 $('#MacBooks-btn').css('background-color','#fff');
+                $('#iPads-btn').css('color','#333');
+                $('#iPads-btn').css('background-color','#fff');
             })
 
             $('#MacBooks-btn').on('click',()=>{
                 $('#MacBooks-section').css('display','block');
                 $('#iPhones-section').css('display','none');
                 $('#iMacs-section').css('display','none');
+                $('#iPads-section').css('display','none');
                 $('#MacBooks-btn').css('color','#fcfcfc');
                 $('#MacBooks-btn').css('background-color','#333');
                 $('#iPhones-btn').css('color','#333');
                 $('#iPhones-btn').css('background-color','#fff');
                 $('#iMacs-btn').css('color','#333');
                 $('#iMacs-btn').css('background-color','#fff');
+                $('#iPads-btn').css('color','#333');
+                $('#iPads-btn').css('background-color','#fff');
+            })
+
+            $('#iPads-btn').on('click',()=>{
+                $('#iPads-section').css('display','block');
+                $('#iPhones-section').css('display','none');
+                $('#iMacs-section').css('display','none');
+                $('#MacBooks-section').css('display','none');
+                $('#iPads-btn').css('color','#fcfcfc');
+                $('#iPads-btn').css('background-color','#333');
+                $('#iPhones-btn').css('color','#333');
+                $('#iPhones-btn').css('background-color','#fff');
+                $('#iMacs-btn').css('color','#333');
+                $('#iMacs-btn').css('background-color','#fff');
+                $('#MacBooks-btn').css('color','#333');
+                $('#MacBooks-btn').css('background-color','#fff');
             })
 
         </script>
