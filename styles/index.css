@@ -275,13 +275,23 @@ nav .sign-up-btn button:hover{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
-#shop #iPhones-section .cards .set-1 .cards-1 img,
-#shop #iPhones-section .cards .set-1 .cards-2 img,
-#shop #iPhones-section .cards .set-1 .cards-3 img,
-#shop #iPhones-section .cards .set-2 .cards-1 img,
-#shop #iPhones-section .cards .set-2 .cards-2 img,
-#shop #iPhones-section .cards .set-2 .cards-3 img{
+#shop #iPhones-section .cards .set-1 .cards-2 img{
+    height: 190px;
+    margin-top: 25px;
+}
+#shop #iPhones-section .cards .set-1 .cards-3 img{
     height: 200px;
+    margin-top: 10px;
+}
+#shop #iPhones-section .cards .set-2 .cards-1 img{
+    height: 200px;
+}
+#shop #iPhones-section .cards .set-2 .cards-2 img{
+    height: 200px;
+}
+#shop #iPhones-section .cards .set-2 .cards-3 img{
+    height: 260px;
+    margin-top: -35px;
 }
 
 #shop #iPhones-section .cards .set-1 .cards-1 h5,
@@ -291,6 +301,23 @@ nav .sign-up-btn button:hover{
 #shop #iPhones-section .cards .set-2 .cards-2 h5,
 #shop #iPhones-section .cards .set-2 .cards-3 h5{
     font-weight: 600;
+}
+
+#shop #iPhones-section .cards .set-1 .cards-1 h5{
+    margin-top: 5px;
+}
+
+#shop #iPhones-section .cards .set-1 .cards-2 h5{
+    margin-top: 20px;
+}
+#shop #iPhones-section .cards .set-1 .cards-3 h5{
+    margin-top: 20px;
+}
+#shop #iPhones-section .cards .set-2 .cards-1 h5{
+    margin-top: 25px;
+}
+#shop #iPhones-section .cards .set-2 .cards-2 h5{
+    margin-top: 25px;
 }
 
 #shop #iPhones-section .cards .set-1 .cards-1 p,
