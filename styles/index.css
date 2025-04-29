@@ -867,3 +867,19 @@ nav .sign-up-btn button:hover{
 #contact .title h1{
     font-weight: 600;
 }
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 120px 0;
+}
+
+footer p,footer p span{
+    font-size: 12px;
+}
+
+footer p span{
+    font-weight: 600;
+}
