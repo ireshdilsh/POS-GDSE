@@ -877,6 +877,7 @@ footer{
 }
 
 footer p,footer p span{
+    margin-top: 80px;
     font-size: 12px;
 }
 
@@ -886,7 +887,7 @@ footer p span{
 
 footer .footer-body{
     display: flex;
-    gap: 20px;
+    gap: 100px;
 }
 
 footer .footer-body .left-side{
@@ -900,4 +901,58 @@ footer .footer-body .left-side img{
 footer .footer-body .left-side p{
     font-size: 14px;
     margin-top: 25px;
+}
+
+footer .footer-body .middle-side,
+footer .footer-body .middle-side-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100px;
+}
+
+footer .footer-body .middle-side h5,
+footer .footer-body .middle-side-two h5{
+    font-weight: 600;
+}
+
+footer .footer-body .middle-side a,
+footer .footer-body .middle-side-two a{
+    margin-top: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+footer .footer-body .middle-side-two{
+    margin-top: -75px;
+}
+
+footer .footer-body .middle-side a:hover,
+footer .footer-body .middle-side-two a:hover{
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+footer .footer-body .right-side{
+    width: 320px;
+}
+
+footer .footer-body .right-side h5{
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+footer .footer-body .right-side input{
+    height: 40px;
+}
+
+footer .footer-body .right-side .subcribe-btn button{
+    padding: 7px 17px;
+    background-color: #333;
+    color: var(--secondry-text-color);
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: 500;
 }
