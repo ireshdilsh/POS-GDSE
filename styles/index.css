@@ -86,6 +86,10 @@ nav .sign-up-btn button:hover{
     background-color: #fafafa;
 }
 
+#home .left-side{
+    width: 50%;
+}
+
 #home .left-side .title h1{
     font-weight: 600;
 }
@@ -103,6 +107,10 @@ nav .sign-up-btn button:hover{
     cursor: pointer;
     background-color: var(--bg-color);
 }
+
+/* carouls start */
+
+/* carouls end */
 
 #shop{
     padding: 80px 120px;
