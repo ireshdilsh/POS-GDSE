@@ -770,3 +770,16 @@ nav .sign-up-btn button:hover{
     font-weight: 600;
 }
 /* according Q $ A end*/
+
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 120px;
+    background-color: #fafafa;
+}
+
+#contact .title h1{
+    font-weight: 600;
+}
