@@ -883,3 +883,21 @@ footer p,footer p span{
 footer p span{
     font-weight: 600;
 }
+
+footer .footer-body{
+    display: flex;
+    gap: 20px;
+}
+
+footer .footer-body .left-side{
+    width: 350px;
+}
+
+footer .footer-body .left-side img{
+    height: 40px;
+}
+
+footer .footer-body .left-side p{
+    font-size: 14px;
+    margin-top: 25px;
+}
