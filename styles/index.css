@@ -876,6 +876,33 @@ nav .sign-up-btn button:hover {
     font-weight: 600;
 }
 
+#contact .contact-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+#contact .contact-body .left-side{
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+#contact .contact-body .left-side .email,
+#contact .contact-body .left-side .address,
+#contact .contact-body .left-side .mobile,
+#contact .contact-body .left-side .land-line{
+    margin-top: 20px;
+}
+
+#contact .contact-body .left-side .email h6,
+#contact .contact-body .left-side .address h6,
+#contact .contact-body .left-side .mobile h6,
+#contact .contact-body .left-side .land-line h6{
+    font-weight: 600;
+}
+
 #contact .contact-body .right-side .form-body {
     display: flex;
     justify-content: left;
