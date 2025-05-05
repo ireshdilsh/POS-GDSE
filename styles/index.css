@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,31 +10,48 @@
     font-weight: 500;
 }
 
-:root{
-    --primary-text-color : #333;
-    --secondry-text-color : #fcfcfc; 
-    --bg-color : #444444;
+:root {
+    --primary-text-color: #333;
+    --secondry-text-color: #fcfcfc;
+    --bg-color: #444444;
+}
+
+/* Register Modal Styles */
+#staticBackdrop, #staticBackdrop1{
+    width: 400px;
+    position: absolute;
+    left: 38%;
+    top: 10%;
+}
+
+#staticBackdrop h1,
+#staticBackdrop1 h1{
+    font-weight: 600;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 nav {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     gap: 150px;
-     background-color: #fafafa;
-     padding: 50px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    background-color: #fafafa;
+    padding: 50px 0 0 0;
 }
 
-nav .logo img{
+nav .logo img {
     height: 50px;
 }
 
-nav .links{
+nav .links {
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
-nav .links a{
+nav .links a {
     color: var(--primary-text-color);
     text-decoration: none;
     font-weight: 500;
@@ -42,7 +59,7 @@ nav .links a{
     position: relative;
 }
 
-nav .links a::after{
+nav .links a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -55,12 +72,12 @@ nav .links a::after{
     transform: scale(0);
 }
 
-nav .links a:hover::after{
+nav .links a:hover::after {
     transform: scale(1);
 
 }
 
-nav .sign-up-btn button{
+nav .sign-up-btn button {
     background-color: #333;
     color: var(--secondry-text-color);
     padding: 10px 30px;
@@ -68,25 +85,25 @@ nav .sign-up-btn button{
     border: none;
 }
 
-nav .sign-up-btn button:hover{
+nav .sign-up-btn button:hover {
     cursor: pointer;
     background-color: var(--bg-color);
 }
 
-#home{
+#home {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px 120px;
-    gap: 50px;
+    gap: 20px;
     background-color: #fafafa;
 }
 
-#home .left-side .title h1{
+#home .left-side .title h1 {
     font-weight: 600;
 }
 
-#home .left-side .sign-in-btn button{
+#home .left-side .sign-in-btn button {
     border: none;
     padding: 9px 17px;
     background-color: #333;
@@ -95,12 +112,12 @@ nav .sign-up-btn button:hover{
     color: var(--secondry-text-color);
 }
 
-#home .left-side .sign-in-btn button:hover{
+#home .left-side .sign-in-btn button:hover {
     cursor: pointer;
     background-color: var(--bg-color);
 }
 
-#shop{
+#shop {
     padding: 80px 120px;
     display: flex;
     justify-content: center;
@@ -108,21 +125,21 @@ nav .sign-up-btn button:hover{
     flex-direction: column;
 }
 
-#shop .title h2{
+#shop .title h2 {
     font-weight: 600;
 }
 
-#shop .discription p{
+#shop .discription p {
     text-align: center;
 }
 
-#shop .selection-btns{
+#shop .selection-btns {
     margin-top: 15px;
     display: flex;
     gap: 10px;
 }
 
-#shop .selection-btns button{
+#shop .selection-btns button {
     border: 1px solid #333;
     height: 35px;
     width: 100px;
@@ -132,20 +149,20 @@ nav .sign-up-btn button:hover{
 }
 
 
-#shop .selection-btns button:hover{
+#shop .selection-btns button:hover {
     background-color: #f6f6f6;
 }
 
-#shop .selection-btns #iMacs-btn{
+#shop .selection-btns #iMacs-btn {
     background-color: #333;
     color: var(--secondry-text-color);
 }
 
-#shop #iMacs-section .cards{
+#shop #iMacs-section .cards {
     margin-top: 20px;
 }
 
-#shop #iMacs-section .cards{
+#shop #iMacs-section .cards {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,7 +170,7 @@ nav .sign-up-btn button:hover{
 }
 
 #shop #iMacs-section .cards .set-1,
-#shop #iMacs-section .cards .set-2{
+#shop #iMacs-section .cards .set-2 {
     display: flex;
     gap: 15px;
     margin-top: 15px;
@@ -164,14 +181,14 @@ nav .sign-up-btn button:hover{
 #shop #iMacs-section .cards .set-1 .card-3,
 #shop #iMacs-section .cards .set-2 .card-1,
 #shop #iMacs-section .cards .set-2 .card-2,
-#shop #iMacs-section .cards .set-2 .card-3{
+#shop #iMacs-section .cards .set-2 .card-3 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 350px;
     padding: 30px;
-    border: 2px solid #fafafa ;
+    border: 2px solid #fafafa;
     border-radius: 5px;
     transition: 0.4s;
     position: relative;
@@ -182,7 +199,7 @@ nav .sign-up-btn button:hover{
 #shop #iMacs-section .cards .set-1 .card-3:hover,
 #shop #iMacs-section .cards .set-2 .card-1:hover,
 #shop #iMacs-section .cards .set-2 .card-2:hover,
-#shop #iMacs-section .cards .set-2 .card-3:hover{
+#shop #iMacs-section .cards .set-2 .card-3:hover {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
@@ -191,7 +208,7 @@ nav .sign-up-btn button:hover{
 #shop #iMacs-section .cards .set-1 .card-3 h5,
 #shop #iMacs-section .cards .set-2 .card-1 h5,
 #shop #iMacs-section .cards .set-2 .card-2 h5,
-#shop #iMacs-section .cards .set-2 .card-3 h5{
+#shop #iMacs-section .cards .set-2 .card-3 h5 {
     font-weight: 600;
 }
 
@@ -200,41 +217,42 @@ nav .sign-up-btn button:hover{
 #shop #iMacs-section .cards .set-1 .card-3 p,
 #shop #iMacs-section .cards .set-2 .card-1 p,
 #shop #iMacs-section .cards .set-2 .card-2 p,
-#shop #iMacs-section .cards .set-2 .card-3 p{
+#shop #iMacs-section .cards .set-2 .card-3 p {
     margin-top: 10px;
+    text-align: justify;
 }
 
-#shop #iMacs-section .cards .set-1 .card-1 h5{
+#shop #iMacs-section .cards .set-1 .card-1 h5 {
     margin-top: 30px;
 }
 
-#shop #iMacs-section .cards .set-1 .card-2 h5{
+#shop #iMacs-section .cards .set-1 .card-2 h5 {
     margin-top: 18px;
 }
 
-#shop #iMacs-section .cards .set-1 .card-3 h5{
+#shop #iMacs-section .cards .set-1 .card-3 h5 {
     margin-top: -25px;
 }
 
-#shop #iMacs-section .cards .set-2 .card-1 h5{
+#shop #iMacs-section .cards .set-2 .card-1 h5 {
     margin-top: 25px;
 }
 
-#shop #iMacs-section .cards .set-2 .card-2 h5{
+#shop #iMacs-section .cards .set-2 .card-2 h5 {
     margin-top: 38px;
 }
 
-#shop #iMacs-section .cards .set-2 .card-3 h5{
+#shop #iMacs-section .cards .set-2 .card-3 h5 {
     margin-top: -25px;
 }
 
 #shop #iMacs-section .cards .set-2 .card-3 img,
-#shop #iMacs-section .cards .set-1 .card-3 img{
+#shop #iMacs-section .cards .set-1 .card-3 img {
     height: 260px;
     margin-top: -35px;
 }
 
-#shop #iPhones-section .cards{
+#shop #iPhones-section .cards {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -242,7 +260,7 @@ nav .sign-up-btn button:hover{
 }
 
 #shop #iPhones-section .cards .set-1,
-#shop #iPhones-section .cards .set-2{
+#shop #iPhones-section .cards .set-2 {
     display: flex;
     gap: 15px;
     margin-top: 15px;
@@ -253,14 +271,14 @@ nav .sign-up-btn button:hover{
 #shop #iPhones-section .cards .set-1 .cards-3,
 #shop #iPhones-section .cards .set-2 .cards-1,
 #shop #iPhones-section .cards .set-2 .cards-2,
-#shop #iPhones-section .cards .set-2 .cards-3{
+#shop #iPhones-section .cards .set-2 .cards-3 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 350px;
     padding: 30px;
-    border: 2px solid #fafafa ;
+    border: 2px solid #fafafa;
     border-radius: 5px;
     transition: 0.4s;
     position: relative;
@@ -271,25 +289,29 @@ nav .sign-up-btn button:hover{
 #shop #iPhones-section .cards .set-1 .cards-3:hover,
 #shop #iPhones-section .cards .set-2 .cards-1:hover,
 #shop #iPhones-section .cards .set-2 .cards-2:hover,
-#shop #iPhones-section .cards .set-2 .cards-3:hover{
+#shop #iPhones-section .cards .set-2 .cards-3:hover {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
-#shop #iPhones-section .cards .set-1 .cards-2 img{
+#shop #iPhones-section .cards .set-1 .cards-2 img {
     height: 190px;
     margin-top: 25px;
 }
-#shop #iPhones-section .cards .set-1 .cards-3 img{
+
+#shop #iPhones-section .cards .set-1 .cards-3 img {
     height: 200px;
     margin-top: 10px;
 }
-#shop #iPhones-section .cards .set-2 .cards-1 img{
+
+#shop #iPhones-section .cards .set-2 .cards-1 img {
     height: 200px;
 }
-#shop #iPhones-section .cards .set-2 .cards-2 img{
+
+#shop #iPhones-section .cards .set-2 .cards-2 img {
     height: 200px;
 }
-#shop #iPhones-section .cards .set-2 .cards-3 img{
+
+#shop #iPhones-section .cards .set-2 .cards-3 img {
     height: 260px;
     margin-top: -35px;
 }
@@ -299,24 +321,27 @@ nav .sign-up-btn button:hover{
 #shop #iPhones-section .cards .set-1 .cards-3 h5,
 #shop #iPhones-section .cards .set-2 .cards-1 h5,
 #shop #iPhones-section .cards .set-2 .cards-2 h5,
-#shop #iPhones-section .cards .set-2 .cards-3 h5{
+#shop #iPhones-section .cards .set-2 .cards-3 h5 {
     font-weight: 600;
 }
 
-#shop #iPhones-section .cards .set-1 .cards-1 h5{
+#shop #iPhones-section .cards .set-1 .cards-1 h5 {
     margin-top: 5px;
 }
 
-#shop #iPhones-section .cards .set-1 .cards-2 h5{
+#shop #iPhones-section .cards .set-1 .cards-2 h5 {
     margin-top: 20px;
 }
-#shop #iPhones-section .cards .set-1 .cards-3 h5{
+
+#shop #iPhones-section .cards .set-1 .cards-3 h5 {
     margin-top: 20px;
 }
-#shop #iPhones-section .cards .set-2 .cards-1 h5{
+
+#shop #iPhones-section .cards .set-2 .cards-1 h5 {
     margin-top: 25px;
 }
-#shop #iPhones-section .cards .set-2 .cards-2 h5{
+
+#shop #iPhones-section .cards .set-2 .cards-2 h5 {
     margin-top: 25px;
 }
 
@@ -325,11 +350,12 @@ nav .sign-up-btn button:hover{
 #shop #iPhones-section .cards .set-1 .cards-3 p,
 #shop #iPhones-section .cards .set-2 .cards-1 p,
 #shop #iPhones-section .cards .set-2 .cards-2 p,
-#shop #iPhones-section .cards .set-2 .cards-3 p{
+#shop #iPhones-section .cards .set-2 .cards-3 p {
     margin-top: 10px;
+    text-align: justify;
 }
 
-#shop #MacBooks-section .cards{
+#shop #MacBooks-section .cards {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -337,7 +363,7 @@ nav .sign-up-btn button:hover{
 }
 
 #shop #MacBooks-section .cards .set-1,
-#shop #MacBooks-section .cards .set-2{
+#shop #MacBooks-section .cards .set-2 {
     display: flex;
     gap: 15px;
     margin-top: 15px;
@@ -348,14 +374,14 @@ nav .sign-up-btn button:hover{
 #shop #MacBooks-section .cards .set-1 .card-3,
 #shop #MacBooks-section .cards .set-2 .card-1,
 #shop #MacBooks-section .cards .set-2 .card-2,
-#shop #MacBooks-section .cards .set-2 .card-3{
+#shop #MacBooks-section .cards .set-2 .card-3 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 350px;
     padding: 30px;
-    border: 2px solid #fafafa ;
+    border: 2px solid #fafafa;
     border-radius: 5px;
     transition: 0.4s;
     position: relative;
@@ -366,11 +392,11 @@ nav .sign-up-btn button:hover{
 #shop #MacBooks-section .cards .set-1 .card-3:hover,
 #shop #MacBooks-section .cards .set-2 .card-1:hover,
 #shop #MacBooks-section .cards .set-2 .card-2:hover,
-#shop #MacBooks-section .cards .set-2 .card-3:hover{
+#shop #MacBooks-section .cards .set-2 .card-3:hover {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
-#shop #MacBooks-section .cards .set-1 .card-1 img{
+#shop #MacBooks-section .cards .set-1 .card-1 img {
     height: 180px;
     margin-top: 40px;
 }
@@ -379,11 +405,11 @@ nav .sign-up-btn button:hover{
 #shop #MacBooks-section .cards .set-1 .card-3 img,
 #shop #MacBooks-section .cards .set-2 .card-1 img,
 #shop #MacBooks-section .cards .set-2 .card-2 img,
-#shop #MacBooks-section .cards .set-2 .card-3 img{
+#shop #MacBooks-section .cards .set-2 .card-3 img {
     height: 250px;
 }
 
-#shop #MacBooks-section .cards .set-1 .card-1 h5{
+#shop #MacBooks-section .cards .set-1 .card-1 h5 {
     margin-top: 30px;
 }
 
@@ -392,11 +418,21 @@ nav .sign-up-btn button:hover{
 #shop #MacBooks-section .cards .set-1 .card-3 h5,
 #shop #MacBooks-section .cards .set-2 .card-1 h5,
 #shop #MacBooks-section .cards .set-2 .card-2 h5,
-#shop #MacBooks-section .cards .set-2 .card-3 h5{
+#shop #MacBooks-section .cards .set-2 .card-3 h5 {
     font-weight: 600;
 }
 
-#shop #iPads-section .cards{
+
+#shop #MacBooks-section .cards .set-1 .card-1 p,
+#shop #MacBooks-section .cards .set-1 .card-2 p,
+#shop #MacBooks-section .cards .set-1 .card-3 p,
+#shop #MacBooks-section .cards .set-2 .card-1 p,
+#shop #MacBooks-section .cards .set-2 .card-2 p,
+#shop #MacBooks-section .cards .set-2 .card-3 p {
+    text-align: justify;
+}
+
+#shop #iPads-section .cards {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -404,7 +440,7 @@ nav .sign-up-btn button:hover{
 }
 
 #shop #iPads-section .cards .set-1,
-#shop #iPads-section .cards .set-2{
+#shop #iPads-section .cards .set-2 {
     display: flex;
     gap: 15px;
     margin-top: 15px;
@@ -413,14 +449,14 @@ nav .sign-up-btn button:hover{
 #shop #iPads-section .cards .set-1 .card-1,
 #shop #iPads-section .cards .set-1 .card-2,
 #shop #iPads-section .cards .set-1 .card-3,
-#shop #iPads-section .cards .set-2 .card-1{
+#shop #iPads-section .cards .set-2 .card-1 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 350px;
     padding: 30px;
-    border: 2px solid #fafafa ;
+    border: 2px solid #fafafa;
     border-radius: 5px;
     transition: 0.4s;
     position: relative;
@@ -429,49 +465,56 @@ nav .sign-up-btn button:hover{
 #shop #iPads-section .cards .set-1 .card-1:hover,
 #shop #iPads-section .cards .set-1 .card-2:hover,
 #shop #iPads-section .cards .set-1 .card-3:hover,
-#shop #iPads-section .cards .set-2 .card-1:hover{
+#shop #iPads-section .cards .set-2 .card-1:hover {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
-#shop #iPads-section .cards .set-1 .card-1 img{
+#shop #iPads-section .cards .set-1 .card-1 img {
     height: 270px;
     margin-top: -70px;
 }
 
-#shop #iPads-section .cards .set-1 .card-2 img{
+#shop #iPads-section .cards .set-1 .card-2 img {
     height: 225px;
     margin-top: -20px;
 }
 
-#shop #iPads-section .cards .set-1 .card-3 img{
+#shop #iPads-section .cards .set-1 .card-3 img {
     height: 270px;
     margin-top: -50px;
 }
 
-#shop #iPads-section .cards .set-2 .card-1 img{
+#shop #iPads-section .cards .set-2 .card-1 img {
     height: 220px;
 }
 
-#shop #iPads-section .cards .set-1 .card-1 h5{
+#shop #iPads-section .cards .set-1 .card-1 h5 {
     margin-top: 15px;
 }
 
-#shop #iPads-section .cards .set-1 .card-2 h5{
+#shop #iPads-section .cards .set-1 .card-2 h5 {
     margin-top: 10px;
 }
 
-#shop #iPads-section .cards .set-2 .card-1 h5{
+#shop #iPads-section .cards .set-2 .card-1 h5 {
     margin-top: 30px;
 }
 
 #shop #iPads-section .cards .set-1 .card-1 h5,
 #shop #iPads-section .cards .set-1 .card-2 h5,
 #shop #iPads-section .cards .set-1 .card-3 h5,
-#shop #iPads-section .cards .set-2 .card-1 h5{
+#shop #iPads-section .cards .set-2 .card-1 h5 {
     font-weight: 600;
 }
 
-#shop #Watches-section .cards{
+#shop #iPads-section .cards .set-1 .card-1 p,
+#shop #iPads-section .cards .set-1 .card-2 p,
+#shop #iPads-section .cards .set-1 .card-3 p,
+#shop #iPads-section .cards .set-2 .card-1 p {
+    text-align: justify;
+}
+
+#shop #Watches-section .cards {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -479,7 +522,7 @@ nav .sign-up-btn button:hover{
 }
 
 #shop #Watches-section .cards .set-1,
-#shop #Watches-section .cards .set-2{
+#shop #Watches-section .cards .set-2 {
     display: flex;
     gap: 15px;
     margin-top: 15px;
@@ -488,14 +531,14 @@ nav .sign-up-btn button:hover{
 #shop #Watches-section .cards .set-1 .card-1,
 #shop #Watches-section .cards .set-1 .card-2,
 #shop #Watches-section .cards .set-1 .card-3,
-#shop #Watches-section .cards .set-2 .card-1{
+#shop #Watches-section .cards .set-2 .card-1 {
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
     flex-direction: column;
     width: 350px;
     padding: 30px;
-    border: 2px solid #fafafa ;
+    border: 2px solid #fafafa;
     border-radius: 5px;
     transition: 0.4s;
     position: relative;
@@ -504,14 +547,14 @@ nav .sign-up-btn button:hover{
 #shop #Watches-section .cards .set-1 .card-1:hover,
 #shop #Watches-section .cards .set-1 .card-2:hover,
 #shop #Watches-section .cards .set-1 .card-3:hover,
-#shop #Watches-section .cards .set-2 .card-1:hover{
+#shop #Watches-section .cards .set-2 .card-1:hover {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 #shop #Watches-section .cards .set-1 .card-1 h5,
 #shop #Watches-section .cards .set-1 .card-2 h5,
 #shop #Watches-section .cards .set-1 .card-3 h5,
-#shop #Watches-section .cards .set-2 .card-1 h5{
+#shop #Watches-section .cards .set-2 .card-1 h5 {
     font-weight: 600;
     margin-top: 20px;
 }
@@ -520,6 +563,488 @@ nav .sign-up-btn button:hover{
 #shop #Watches-section .cards .set-1 .card-1 p,
 #shop #Watches-section .cards .set-1 .card-2 p,
 #shop #Watches-section .cards .set-1 .card-3 p,
-#shop #Watches-section .cards .set-2 .card-1 p{
+#shop #Watches-section .cards .set-2 .card-1 p {
     margin-top: 10px;
+    text-align: justify;
+}
+
+#Offers-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 120px;
+    background-color: #fafafa;
+}
+
+#Offers-section h1 {
+    font-weight: 600;
+}
+
+#Offers-section .offer-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+#Offers-section .offer-cards .set-1,
+#Offers-section .offer-cards .set-2 {
+    display: flex;
+    gap: 15px;
+}
+
+#Offers-section .offer-cards .set-1 .card-1,
+#Offers-section .offer-cards .set-1 .card-2,
+#Offers-section .offer-cards .set-1 .card-3,
+#Offers-section .offer-cards .set-2 .card-1,
+#Offers-section .offer-cards .set-2 .card-2,
+#Offers-section .offer-cards .set-2 .card-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    height: 175px;
+    padding: 30px;
+    border: 2px solid #fcfcfc;
+    border-radius: 5px;
+    transition: 0.4s;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+
+#Offers-section .offer-cards .set-1 .card-1 .bar,
+#Offers-section .offer-cards .set-1 .card-2 .bar,
+#Offers-section .offer-cards .set-1 .card-3 .bar,
+#Offers-section .offer-cards .set-2 .card-1 .bar,
+#Offers-section .offer-cards .set-2 .card-2 .bar,
+#Offers-section .offer-cards .set-2 .card-3 .bar {
+    width: 100%;
+    height: 5px;
+    background-color: #333333b4;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+#Offers-section .offer-cards .set-1 .card-1:hover,
+#Offers-section .offer-cards .set-1 .card-2:hover,
+#Offers-section .offer-cards .set-1 .card-3:hover,
+#Offers-section .offer-cards .set-2 .card-1:hover,
+#Offers-section .offer-cards .set-2 .card-2:hover,
+#Offers-section .offer-cards .set-2 .card-3:hover {
+    transform: scale(1.05);
+}
+
+#Offers-section .offer-cards .set-1 .card-1 h5,
+#Offers-section .offer-cards .set-1 .card-2 h5,
+#Offers-section .offer-cards .set-1 .card-3 h5,
+#Offers-section .offer-cards .set-2 .card-1 h5,
+#Offers-section .offer-cards .set-2 .card-2 h5,
+#Offers-section .offer-cards .set-2 .card-3 h5 {
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+#Offers-section .offer-cards .set-1 .card-1 h5 img,
+#Offers-section .offer-cards .set-1 .card-2 h5 img,
+#Offers-section .offer-cards .set-1 .card-3 h5 img,
+#Offers-section .offer-cards .set-2 .card-1 h5 img,
+#Offers-section .offer-cards .set-2 .card-2 h5 img,
+#Offers-section .offer-cards .set-2 .card-3 h5 img {
+    height: 22px;
+}
+
+#Offers-section .offer-cards .set-1 .card-1 p,
+#Offers-section .offer-cards .set-1 .card-2 p,
+#Offers-section .offer-cards .set-1 .card-3 p,
+#Offers-section .offer-cards .set-2 .card-1 p,
+#Offers-section .offer-cards .set-2 .card-2 p,
+#Offers-section .offer-cards .set-2 .card-3 p {
+    text-align: justify;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 120px;
+}
+
+#about h1 {
+    font-weight: 600;
+}
+
+#about .about-body {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 450px;
+}
+
+#about .about-body .left-side {
+    width: 50%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#about .about-body .left-side p {
+    text-align: justify;
+}
+
+#about .about-body .service-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+#about .about-body .service-cards .card-1,
+#about .about-body .service-cards .card-2,
+#about .about-body .service-cards .card-3,
+#about .about-body .service-cards .card-4 {
+    padding: 25px;
+    border: 1.8px solid #fafafa;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: 0.4s;
+    position: relative;
+}
+
+#about .about-body .service-cards .card-1 .color-bar,
+#about .about-body .service-cards .card-2 .color-bar,
+#about .about-body .service-cards .card-3 .color-bar,
+#about .about-body .service-cards .card-4 .color-bar {
+    background-color: #333333b4;
+    height: 5px;
+    width: 22.6%;
+    rotate: 90deg;
+    position: absolute;
+    left: -70px;
+    top: 66px;
+    border-radius: 0 0 5px 5px;
+}
+
+#about .about-body .service-cards .card-1 h5,
+#about .about-body .service-cards .card-2 h5,
+#about .about-body .service-cards .card-3 h5,
+#about .about-body .service-cards .card-4 h5 {
+    font-weight: 600;
+}
+
+#about .about-body .service-cards .card-1 p,
+#about .about-body .service-cards .card-2 p,
+#about .about-body .service-cards .card-3 p,
+#about .about-body .service-cards .card-4 p {
+    margin-top: 10px;
+}
+
+#about .about-body .service-cards .card-1:hover,
+#about .about-body .service-cards .card-2:hover,
+#about .about-body .service-cards .card-3:hover,
+#about .about-body .service-cards .card-4:hover {
+    transform: scale(1.05);
+}
+
+#about .right-side {
+    position: relative;
+}
+
+#about .right-side #first {
+    position: absolute;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px 0 20px 0;
+    top: -350px;
+    left: -300px;
+    z-index: -1;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+#about .right-side #second {
+    height: 400px;
+    position: absolute;
+    left: -150px;
+    top: -40px;
+    border-radius: 20px 0 20px 0;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+#qanda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 120px;
+    background-color: #fafafa;
+}
+
+#qanda h1 {
+    font-weight: 600;
+}
+
+#riview-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 120px;
+}
+
+#riview-section .title h1 {
+    font-weight: 600;
+}
+
+#riview-section .riview-cards {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#riview-section .riview-cards .set-1,
+#riview-section .riview-cards .set-2 {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+#riview-section .riview-cards .set-1 .card-1,
+#riview-section .riview-cards .set-1 .card-2,
+#riview-section .riview-cards .set-1 .card-3,
+#riview-section .riview-cards .set-2 .card-1,
+#riview-section .riview-cards .set-2 .card-2,
+#riview-section .riview-cards .set-2 .card-3 {
+    padding: 25px;
+    border: 1.8px solid #fafafa;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: 0.4s;
+    width: 350px;
+    position: relative;
+}
+
+#riview-section .riview-cards .set-1 .card-1:hover,
+#riview-section .riview-cards .set-1 .card-2:hover,
+#riview-section .riview-cards .set-1 .card-3:hover,
+#riview-section .riview-cards .set-2 .card-1:hover,
+#riview-section .riview-cards .set-2 .card-2:hover,
+#riview-section .riview-cards .set-2 .card-3:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+#riview-section .riview-cards .set-1 .card-1 h6,
+#riview-section .riview-cards .set-1 .card-2 h6,
+#riview-section .riview-cards .set-1 .card-3 h6,
+#riview-section .riview-cards .set-2 .card-1 h6,
+#riview-section .riview-cards .set-2 .card-2 h6,
+#riview-section .riview-cards .set-2 .card-3 h6 {
+    font-weight: 600;
+}
+
+#riview-section .riview-cards .set-1 .card-1 img,
+#riview-section .riview-cards .set-1 .card-2 img,
+#riview-section .riview-cards .set-1 .card-3 img,
+#riview-section .riview-cards .set-2 .card-1 img,
+#riview-section .riview-cards .set-2 .card-2 img,
+#riview-section .riview-cards .set-2 .card-3 img {
+    height: 50px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+
+/* according Q $ A start*/
+#accordionFlushExample {
+    width: 1100px;
+    margin-top: 30px;
+}
+
+.accordion-item {
+    margin-top: 10px;
+}
+
+.accordion-item button {
+    font-weight: 600;
+}
+
+/* according Q $ A end*/
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 120px;
+    background-color: #fafafa;
+}
+
+#contact .title h1 {
+    font-weight: 600;
+}
+
+#contact .contact-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+#contact .contact-body .left-side{
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+#contact .contact-body .left-side .email,
+#contact .contact-body .left-side .address,
+#contact .contact-body .left-side .mobile,
+#contact .contact-body .left-side .land-line{
+    margin-top: 20px;
+}
+
+#contact .contact-body .left-side .email h6,
+#contact .contact-body .left-side .address h6,
+#contact .contact-body .left-side .mobile h6,
+#contact .contact-body .left-side .land-line h6{
+    font-weight: 600;
+}
+
+#contact .contact-body .right-side .form-body {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 25px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+#contact .contact-body .right-side .form-body .title h4 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#contact .contact-body .right-side .form-body input,
+#contact .contact-body .right-side .form-body textarea {
+    width: 350px;
+}
+
+/* boostrap input and labal class for style */
+#contact .contact-body .right-side .form-body label {
+    margin-top: 15px;
+}
+
+#contact .contact-body .right-side .form-body input {
+    height: 40px;
+}
+
+#contact .contact-body .right-side .form-body textarea {
+    height: 150px;
+}
+
+#contact .contact-body .right-side .form-body .submit-btn button {
+    background-color: #333;
+    color: var(--secondry-text-color);
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 120px 0;
+}
+
+footer p,
+footer p span {
+    margin-top: 80px;
+    font-size: 12px;
+}
+
+footer p span {
+    font-weight: 600;
+}
+
+footer .footer-body {
+    display: flex;
+    gap: 100px;
+}
+
+footer .footer-body .left-side {
+    width: 350px;
+}
+
+footer .footer-body .left-side img {
+    height: 40px;
+}
+
+footer .footer-body .left-side p {
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+footer .footer-body .middle-side,
+footer .footer-body .middle-side-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100px;
+}
+
+footer .footer-body .middle-side h5,
+footer .footer-body .middle-side-two h5 {
+    font-weight: 600;
+}
+
+footer .footer-body .middle-side a,
+footer .footer-body .middle-side-two a {
+    margin-top: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+footer .footer-body .middle-side-two {
+    margin-top: -75px;
+}
+
+footer .footer-body .middle-side a:hover,
+footer .footer-body .middle-side-two a:hover {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+footer .footer-body .right-side {
+    width: 320px;
+}
+
+footer .footer-body .right-side h5 {
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+footer .footer-body .right-side input {
+    height: 40px;
+}
+
+footer .footer-body .right-side .subcribe-btn button {
+    padding: 7px 17px;
+    background-color: #333;
+    color: var(--secondry-text-color);
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: 500;
 }
