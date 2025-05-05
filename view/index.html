@@ -50,7 +50,25 @@
                 </div>
               </div>
             </div>
-          </div>
+        </div>
+
+        <!-- Login Modal -->
+        <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Sign In My Account</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-dark">Sign In</button>
+                </div>
+              </div>
+            </div>
+        </div>
 
         <!-- Home Section -->
         <section id="home">
@@ -67,7 +85,7 @@
                         and fast delivery - all in one place.</p>
                 </div>
                 <div class="sign-in-btn">
-                    <button id="login">Sign In My Account</button>
+                    <button id="login" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Sign In My Account</button>
                 </div>
             </div>
             <div class="right-side">

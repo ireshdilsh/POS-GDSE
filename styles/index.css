@@ -17,14 +17,15 @@
 }
 
 /* Register Modal Styles */
-#staticBackdrop {
+#staticBackdrop, #staticBackdrop1{
     width: 400px;
     position: absolute;
     left: 38%;
     top: 10%;
 }
 
-#staticBackdrop h1{
+#staticBackdrop h1,
+#staticBackdrop1 h1{
     font-weight: 600;
 }
 
