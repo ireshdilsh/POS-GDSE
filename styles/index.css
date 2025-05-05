@@ -16,6 +16,18 @@
     --bg-color: #444444;
 }
 
+/* Register Modal Styles */
+#staticBackdrop {
+    width: 400px;
+    position: absolute;
+    left: 38%;
+    top: 10%;
+}
+
+#staticBackdrop h1{
+    font-weight: 600;
+}
+
 body {
     overflow-x: hidden;
 }
