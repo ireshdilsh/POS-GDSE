@@ -1,5 +1,5 @@
 export default class ItemModel{
-    constructor(){
-        
+    constructor(name){
+        this.name = name
     }
 }
