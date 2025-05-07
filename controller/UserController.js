@@ -8,6 +8,11 @@ $('#signup-btn').on('click',()=>{
 
     let data = new UserModel(name,email,password)
     users.push(data)
+    Swal.fire({
+        title: "Good job!",
+        text: "Account Created !",
+        icon: "success"
+      });
     console.log(users);
     
 })
@@ -18,16 +23,29 @@ $('#login-btn').on('click', () => {
     let password = $('#loginPass').val()
 
     if (!email || !password) {
-        alert('Email and password are required');
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Something went wrong!"
+          });
         return;
     }
 
     let user = users.find(user => user.email === email && user.password === password);
     if (user) {
-        alert('Login successful! Welcome ' + user.name);
+        // alert('Login successful! Welcome ' + user.name);
+        Swal.fire({
+            title: "Good job!",
+            text: "Welcome Back To "+user.name,
+            icon: "success"
+          });
         console.log('Authenticated user:', user);
         // Optionally redirect or show dashboard
     } else {
-        alert('Invalid email or password');
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Invalid Email Address or Password!"
+          });
     }
 });
