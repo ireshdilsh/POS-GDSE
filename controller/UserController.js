@@ -11,3 +11,23 @@ $('#signup-btn').on('click',()=>{
     console.log(users);
     
 })
+
+// Login Authetication
+$('#login-btn').on('click', () => {
+    let email = $('#loginEmail').val()
+    let password = $('#loginPass').val()
+
+    if (!email || !password) {
+        alert('Email and password are required');
+        return;
+    }
+
+    let user = users.find(user => user.email === email && user.password === password);
+    if (user) {
+        alert('Login successful! Welcome ' + user.name);
+        console.log('Authenticated user:', user);
+        // Optionally redirect or show dashboard
+    } else {
+        alert('Invalid email or password');
+    }
+});
