@@ -8,6 +8,7 @@ $('#signup-btn').on('click',()=>{
 
     let data = new UserModel(name,email,password)
     users.push(data)
+    // $('#staticBackdrop').css('display','none')
     Swal.fire({
         title: "Good job!",
         text: "Account Created !",
@@ -33,14 +34,13 @@ $('#login-btn').on('click', () => {
 
     let user = users.find(user => user.email === email && user.password === password);
     if (user) {
-        // alert('Login successful! Welcome ' + user.name);
         Swal.fire({
             title: "Good job!",
             text: "Welcome Back To "+user.name,
             icon: "success"
           });
+        //   $('#staticBackdrop1').css('display','none')
         console.log('Authenticated user:', user);
-        // Optionally redirect or show dashboard
     } else {
         Swal.fire({
             icon: "error",
