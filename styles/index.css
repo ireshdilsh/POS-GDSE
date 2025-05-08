@@ -1066,4 +1066,40 @@ footer .footer-body .right-side .subcribe-btn button {
     margin-top: 0px;
 }
 
+#pos-body aside button:hover{
+    cursor: pointer;
+}
 
+#pos-body main h1{
+    font-weight: 600;
+}
+
+#pos-body .search-field-and-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    gap: 25px;
+}
+
+#pos-body .search-field-and-btn .input-field input{
+    height: 45px;
+    width: 350px;
+    background-color: #fafafa;
+    padding: 0 15px;
+    border: none;
+    border-radius: 5px;   
+}
+
+#pos-body .search-field-and-btn .search-btn button{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pos-body .search-field-and-btn .search-btn button img{
+    height: 25px;
+    width: 25px;
+}
