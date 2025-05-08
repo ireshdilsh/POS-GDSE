@@ -1048,3 +1048,22 @@ footer .footer-body .right-side .subcribe-btn button {
     margin-top: 10px;
     font-weight: 500;
 }
+
+/* Pos Body */
+#pos-body{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 100px;
+    padding: 80px 120px;
+}
+
+#pos-body aside button,#pos-body aside button img{
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: none;
+    margin-top: 0px;
+}
+
+
