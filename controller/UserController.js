@@ -6,16 +6,27 @@ $('#signup-btn').on('click',()=>{
     let email = $('#exampleInputEmail1').val()
     let password = $('#exampleInputPassword1').val()
 
+    if (email == '' || password == '' || name == '') {
+      Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Something went wrong!"
+        });
+      return;
+  }
+
     let data = new UserModel(name,email,password)
     users.push(data)
-    // $('#staticBackdrop').css('display','none')
     Swal.fire({
         title: "Good job!",
         text: "Account Created !",
         icon: "success"
       });
+    // Hide Account create Modal
+    let modal = bootstrap.Modal.getInstance(document.getElementById('staticBackdrop'));
+    modal.hide();
+
     console.log(users);
-    
 })
 
 // Login Authetication
@@ -39,8 +50,10 @@ $('#login-btn').on('click', () => {
             text: "Welcome Back To "+user.name,
             icon: "success"
           });
-        //   $('#staticBackdrop1').css('display','none')
-        console.log('Authenticated user:', user);
+          // Hide Account create Modal
+      let modal = bootstrap.Modal.getInstance(document.getElementById('staticBackdrop1'));
+      modal.hide();
+      console.log('Authenticated user:', user);
     } else {
         Swal.fire({
             icon: "error",
