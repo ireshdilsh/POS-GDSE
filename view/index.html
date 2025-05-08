@@ -33,69 +33,76 @@
         </nav>
 
         <!-- Create Account Modal(Register View) -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Create Account</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Create Account</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="exampleInputName"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                <div id="passwordHelpBlock" class="form-text">
+                                    Must be 8-20 characters long
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="signup-btn" type="button" class="btn btn-dark">Create Account</button>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Your Name</label>
-                            <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp">
-                          </div>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                        </div>
-                        <div class="mb-3">
-                          <label for="exampleInputPassword1" class="form-label">Password</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1">
-                          <div id="passwordHelpBlock" class="form-text">
-                            Must be 8-20 characters long
-                        </div>
-                        </div>
-                      </form>
-                </div>
-                <div class="modal-footer">
-                  <button id="signup-btn" type="button" class="btn btn-dark">Create Account</button>
-                </div>
-              </div>
             </div>
         </div>
 
         <!-- Login Modal -->
-        <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Sign In My Account</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Sign In My Account</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input id="loginEmail" type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input id="loginPass" type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">remember me</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="login-btn" class="btn btn-dark">Sign In</button>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Email address</label>
-                          <input id="loginEmail" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                        </div>
-                        <div class="mb-3">
-                          <label for="exampleInputPassword1" class="form-label">Password</label>
-                          <input id="loginPass" type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <div class="mb-3 form-check">
-                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                          <label class="form-check-label" for="exampleCheck1">remember me</label>
-                        </div>
-                      </form>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" id="login-btn" class="btn btn-dark">Sign In</button>
-                </div>
-              </div>
             </div>
         </div>
 
@@ -114,7 +121,8 @@
                         and fast delivery - all in one place.</p>
                 </div>
                 <div class="sign-in-btn">
-                    <button id="login" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Sign In My Account</button>
+                    <button id="login" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Sign In My
+                        Account</button>
                 </div>
             </div>
             <div class="right-side">
@@ -720,11 +728,13 @@
 
         <section id="pos-body">
             <aside>
-                <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                <button class="btn btn-light" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                     <img src="https://img.icons8.com/?size=100&id=36389&format=png&color=000000" alt="">
                 </button>
 
-                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+                    aria-labelledby="offcanvasWithBothOptionsLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -732,31 +742,32 @@
                     <div class="offcanvas-body">
                         <p>Try scrolling the rest of the page to see this option in action.</p>
                     </div>
-                    </div>
+                </div>
             </aside>
             <main>
                 <h1>Buy Your Next Apple Device</h1>
-                <p>Browse our full range of Apple products and choose the perfect device for your needs. Seamlessly add items to your cart and enjoy a smooth checkout experience.</p>
+                <p>Browse our full range of Apple products and choose the perfect device for your needs. Seamlessly add
+                    items to your cart and enjoy a smooth checkout experience.</p>
                 <div class="search-field-and-btn">
                     <div class="input-field">
-                        <input type="text" class="form-control"  aria-describedby="emailHelp" placeholder="Search Here ...">
+                        <input type="text" class="form-control" aria-describedby="emailHelp"
+                            placeholder="Search Here ...">
                     </div>
                     <div class="search-btn">
-                        <button class="btn btn-dark"><img src="https://img.icons8.com/?size=100&id=7695&format=png&color=ffffff" alt=""></button>
+                        <button class="btn btn-dark"><img
+                                src="https://img.icons8.com/?size=100&id=7695&format=png&color=ffffff" alt=""></button>
                     </div>
                 </div>
-                     
-                  </main>
+            </main>
         </section>
 
     </section>
 
-    <label for="imageInput">Choose an image:</label>
+    <!-- <label for="imageInput">Choose an image:</label>
 <input type="file" id="imageInput" accept="image/*">
 
 <p id="fileLabel">No file chosen</p>
 
-<!-- Image will be displayed here -->
 <img id="preview" src="" alt="Image preview" width="300" style="display:none; margin-top:10px;">
 
 <script>
@@ -784,7 +795,7 @@
       preview.style.display = 'none';
     }
   });
-</script>
+</script> -->
 
 
     <!-- add jQuery js file -->
