@@ -1092,22 +1092,20 @@ footer .footer-body .right-side .subcribe-btn button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 150px;
-    gap: 25px;
+    margin-left: 140px;
+    gap: 15px;
 }
 
 #pos-body .search-field-and-btn .input-field input{
     height: 45px;
     width: 350px;
-    background-color: #fafafa;
     padding: 0 15px;
-    border: none;
-    border-radius: 5px;   
+   
 }
 
 #pos-body .search-field-and-btn .search-btn button{
-    height: 40px;
-    width: 40px;
+    height: 43px;
+    width: 43px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1116,4 +1114,39 @@ footer .footer-body .right-side .subcribe-btn button {
 #pos-body .search-field-and-btn .search-btn button img{
     height: 25px;
     width: 25px;
+}
+
+#pos-body aside .links{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 170px;
+    right: 0;
+    top: 250px;
+    bottom: 0;
+    margin: auto;
+}
+
+#pos-body aside .links a{
+    text-decoration: none;
+    margin: 10px 0;
+    color: #333;
+    font-weight: 500;
+    &:hover{
+        font-weight: 600;
+    }
+}
+
+#pos-body aside .logout-btn button{
+    padding: 10px 15px;
+    width: 250px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 5px;
+    color: var(--secondry-text-color);
+    margin-left: 45px;
+    margin-bottom: 50px;
+    &:hover{
+        background-color: #444444;
+    }
 }
