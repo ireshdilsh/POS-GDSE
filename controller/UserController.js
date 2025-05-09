@@ -58,6 +58,10 @@ $('#login-btn').on('click', () => {
     email = $('#loginEmail').val('')
     password = $('#loginPass').val('')
 
+    const username = document.getElementById('username')
+    const useremail = document.getElementById('useremail')
+    username.innerHTML = user.name
+    useremail.innerHTML = user.email
     // Hide Account create Modal
     let modal = bootstrap.Modal.getInstance(document.getElementById('staticBackdrop1'));
     modal.hide();
@@ -70,3 +74,4 @@ $('#login-btn').on('click', () => {
     });
   }
 });
+
