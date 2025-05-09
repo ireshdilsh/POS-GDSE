@@ -35,43 +35,61 @@ $('#signup-btn').on('click', () => {
 
 // Login Authetication
 $('#login-btn').on('click', () => {
-  let email = $('#loginEmail').val()
-  let password = $('#loginPass').val()
+  let email = $('#loginEmail').val().trim();
+  let password = $('#loginPass').val().trim();
+
+  const adminEmail = 'sample@gmail.com';
+  const adminPassword = 'password';
 
   if (!email || !password) {
     Swal.fire({
       icon: "error",
       title: "Oops...",
-      text: "Something went wrong!"
+      text: "Email and password are required!"
     });
     return;
   }
 
-  let user = users.find(user => user.email === email && user.password === password);
-  if (user) {
+  // Check if admin
+  if (email === adminEmail && password === adminPassword) {
     Swal.fire({
-      title: "Good job!",
-      text: "Welcome Back To " + user.name,
+      title: "Welcome Admin!",
+      text: "You have successfully logged in as Admin.",
       icon: "success"
     });
+    resetModal()
+    // Optional: Set admin panel visibility or redirect
+    document.getElementById('username').innerText = "Admin";
+    document.getElementById('useremail').innerText = adminEmail;
 
-    email = $('#loginEmail').val('')
-    password = $('#loginPass').val('')
-
-    const username = document.getElementById('username')
-    const useremail = document.getElementById('useremail')
-    username.innerHTML = user.name
-    useremail.innerHTML = user.email
-    // Hide Account create Modal
-    let modal = bootstrap.Modal.getInstance(document.getElementById('staticBackdrop1'));
-    modal.hide();
-    console.log('Authenticated user:', user);
   } else {
-    Swal.fire({
-      icon: "error",
-      title: "Oops...",
-      text: "Invalid Email Address or Password!"
-    });
+    // Check if user exists in users array
+    let user = users.find(u => u.email === email && u.password === password);
+
+    if (user) {
+      Swal.fire({
+        title: "Welcome!",
+        text: `Hello ${user.name}, you have successfully logged in.`,
+        icon: "success"
+      });
+      resetModal()
+      document.getElementById('username').innerText = user.name;
+      document.getElementById('useremail').innerText = user.email;
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Login Failed",
+        text: "Invalid Email or Password."
+      });
+      return;
+    }
   }
 });
+
+const resetModal = () => {
+  $('#loginEmail').val('');
+  $('#loginPass').val('');
+  let modal = bootstrap.Modal.getInstance(document.getElementById('staticBackdrop1'));
+  modal.hide();
+}
 

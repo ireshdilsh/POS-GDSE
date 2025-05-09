@@ -1052,9 +1052,9 @@ footer .footer-body .right-side .subcribe-btn button {
 /* Pos Body */
 #pos-body{
     display: flex;
-    justify-content: left;
-    align-items: flex-start;
-    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 80px 120px;
 }
 
@@ -1070,7 +1070,7 @@ footer .footer-body .right-side .subcribe-btn button {
     cursor: pointer;
 }
 
-#pos-body main h1{
+#pos-body h1{
     font-weight: 600;
 }
 
@@ -1092,7 +1092,6 @@ footer .footer-body .right-side .subcribe-btn button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 140px;
     gap: 15px;
 }
 
@@ -1100,7 +1099,6 @@ footer .footer-body .right-side .subcribe-btn button {
     height: 45px;
     width: 350px;
     padding: 0 15px;
-   
 }
 
 #pos-body .search-field-and-btn .search-btn button{
@@ -1116,37 +1114,53 @@ footer .footer-body .right-side .subcribe-btn button {
     width: 25px;
 }
 
-#pos-body aside .links{
+#pos-body .selection-btns{
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 170px;
-    right: 0;
-    top: 250px;
-    bottom: 0;
-    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
 }
 
-#pos-body aside .links a{
-    text-decoration: none;
-    margin: 10px 0;
-    color: #333;
-    font-weight: 500;
-    &:hover{
-        font-weight: 600;
-    }
+#pos-body .selection-btns button {
+    border: 1px solid #333;
+    height: 35px;
+    width: 100px;
+    border-radius: 20px;
+    color: var(--primary-text-color);
+    background-color: #fff;
 }
 
-#pos-body aside .logout-btn button{
-    padding: 10px 15px;
-    width: 250px;
-    height: 40px;
-    background-color: #333;
-    border-radius: 5px;
-    color: var(--secondry-text-color);
-    margin-left: 45px;
-    margin-bottom: 50px;
-    &:hover{
-        background-color: #444444;
-    }
+
+#pos-body .selection-btns button:hover {
+    background-color: #f6f6f6;
+}
+
+#pos-body .body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+#pos-body .body .left-side .card{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 350px;
+}
+
+#pos-body .body .left-side .card img{
+    height: 200px;
+}
+
+#pos-body .body .left-side .card p{
+ text-align: justify;
+}
+
+#pos-body .body .right-side .item-form{
+    width: 450px;
+    padding: 20px;
 }

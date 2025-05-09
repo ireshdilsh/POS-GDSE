@@ -1,8 +1,8 @@
 export default class ItemModel{
-    constructor(name,discription,price,image){
+    constructor(name,discription,image,price){
         this.name = name
         this.discription = discription
-        this.price = price
         this.image = image
+         this.price = price
     }
 }
