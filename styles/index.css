@@ -1074,6 +1074,20 @@ footer .footer-body .right-side .subcribe-btn button {
     font-weight: 600;
 }
 
+#offcanvasWithBothOptions{
+    padding: 25px;
+}
+
+#offcanvasWithBothOptions h4{
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+#offcanvasWithBothOptions h5{
+    margin-top: 25px;
+    font-weight: 600;
+}
+
 #pos-body .search-field-and-btn{
     display: flex;
     justify-content: center;
