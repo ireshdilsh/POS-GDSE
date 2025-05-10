@@ -730,11 +730,11 @@
     </section>
 
     <section id="pos-body">
-        <!-- <div class="offcanvas-body">
-                       <h5 id="useremail"></h5>
-                       <p id="username"></p>
-                    </div>
-                     -->
+        <div class="account">
+            <h5 id="useremail"></h5>
+            <p id="username"></p>
+        </div>
+
         <h1>Buy Your Next Apple Device</h1>
         <p>Browse our full range of Apple products and choose the perfect device for your needs. Seamlessly add
             items to your cart and enjoy a smooth checkout experience.</p>
@@ -747,17 +747,8 @@
                         alt=""></button>
             </div>
         </div>
-    
+
         <div class="sides">
-             <div class="right-side">
-                <div class="form">
-                    <input id="item-name" type="text" placeholder="title">
-                    <input id="item-image" type="file" placeholder="image">
-                    <input id="item-discription" type="text" placeholder="discription">
-                    <input id="item-price" type="text" placeholder="price">
-                    <button id="add-item-btn">Add New Item</button>
-                </div>
-            </div>
             <div class="left-side">
                 <div class="columns">
                     <div id="column-1" class="card-column"></div>
@@ -765,43 +756,20 @@
                     <div id="column-3" class="card-column"></div>
                 </div>
             </div>
+
+            <div class="right-side">
+                <div id="item-form" class="form">
+                    <h4>Add New Products</h4>
+                    <input id="item-name" type="text" placeholder="title">
+                    <input id="item-image" accept="image/*" type="file" placeholder="image">
+                    <input id="item-discription" type="text" placeholder="discription">
+                    <input id="item-price" type="text" placeholder="price">
+                    <button id="add-item-btn">Add New Item</button>
+                </div>
+            </div>
         </div>
     </section>
-
-    <!-- <label for="imageInput">Choose an image:</label>
-<input type="file" id="imageInput" accept="image/*">
-
-<p id="fileLabel">No file chosen</p>
-
-<img id="preview" src="" alt="Image preview" width="300" style="display:none; margin-top:10px;">
-
-<script>
-  const input = document.getElementById('imageInput');
-  const label = document.getElementById('fileLabel');
-  const preview = document.getElementById('preview');
-
-  input.addEventListener('change', function () {
-    if (input.files.length > 0) {
-      const file = input.files[0];
-      const fileName = file.name;
-
-      // Update label
-      label.textContent = `Selected file: ${fileName}`;
-
-      // Show image preview
-      const imageUrl = URL.createObjectURL(file);
-      preview.src = imageUrl;
-      preview.style.display = 'block';
-
-      // Optional: save the image URL in an array
-      // selectedImageSources.push(imageUrl); // if needed
-    } else {
-      label.textContent = 'No file chosen';
-      preview.style.display = 'none';
-    }
-  });
-</script> -->
-
+    <img id="preview" src="" alt="Image preview" width="300" style="display:none; margin-top:10px;">
 
     <!-- add jQuery js file -->
     <script src="../lib/jquery-3.7.1.min.js"></script>

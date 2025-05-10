@@ -17,7 +17,8 @@
 }
 
 /* Register Modal Styles */
-#staticBackdrop, #staticBackdrop1{
+#staticBackdrop,
+#staticBackdrop1 {
     width: 400px;
     position: absolute;
     left: 38%;
@@ -25,7 +26,7 @@
 }
 
 #staticBackdrop h1,
-#staticBackdrop1 h1{
+#staticBackdrop1 h1 {
     font-weight: 600;
 }
 
@@ -889,14 +890,14 @@ nav .sign-up-btn button:hover {
     font-weight: 600;
 }
 
-#contact .contact-body{
+#contact .contact-body {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 100px;
 }
 
-#contact .contact-body .left-side{
+#contact .contact-body .left-side {
     padding: 25px;
     background-color: #fff;
     border-radius: 10px;
@@ -905,14 +906,14 @@ nav .sign-up-btn button:hover {
 #contact .contact-body .left-side .email,
 #contact .contact-body .left-side .address,
 #contact .contact-body .left-side .mobile,
-#contact .contact-body .left-side .land-line{
+#contact .contact-body .left-side .land-line {
     margin-top: 20px;
 }
 
 #contact .contact-body .left-side .email h6,
 #contact .contact-body .left-side .address h6,
 #contact .contact-body .left-side .mobile h6,
-#contact .contact-body .left-side .land-line h6{
+#contact .contact-body .left-side .land-line h6 {
     font-weight: 600;
 }
 
@@ -1050,7 +1051,7 @@ footer .footer-body .right-side .subcribe-btn button {
 }
 
 /* Pos Body */
-#pos-body{
+#pos-body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1058,50 +1059,38 @@ footer .footer-body .right-side .subcribe-btn button {
     padding: 80px 120px;
 }
 
-#pos-body aside button,#pos-body aside button img{
-    height: 20px;
-    width: 20px;
-    background-color: #fff;
-    border: none;
-    margin-top: 0px;
-}
-
-#pos-body aside button:hover{
-    cursor: pointer;
-}
-
-#pos-body h1{
+#pos-body h1 {
     font-weight: 600;
 }
 
-#offcanvasWithBothOptions{
+#offcanvasWithBothOptions {
     padding: 25px;
 }
 
-#offcanvasWithBothOptions h4{
+#offcanvasWithBothOptions h4 {
     font-weight: 600;
     margin-top: 10px;
 }
 
-#offcanvasWithBothOptions h5{
+#offcanvasWithBothOptions h5 {
     margin-top: 25px;
     font-weight: 600;
 }
 
-#pos-body .search-field-and-btn{
+#pos-body .search-field-and-btn {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
 }
 
-#pos-body .search-field-and-btn .input-field input{
+#pos-body .search-field-and-btn .input-field input {
     height: 45px;
     width: 350px;
     padding: 0 15px;
 }
 
-#pos-body .search-field-and-btn .search-btn button{
+#pos-body .search-field-and-btn .search-btn button {
     height: 43px;
     width: 43px;
     display: flex;
@@ -1109,7 +1098,7 @@ footer .footer-body .right-side .subcribe-btn button {
     align-items: center;
 }
 
-#pos-body .search-field-and-btn .search-btn button img{
+#pos-body .search-field-and-btn .search-btn button img {
     height: 25px;
     width: 25px;
 }
@@ -1119,37 +1108,81 @@ footer .footer-body .right-side .subcribe-btn button {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     gap: 40px;
 }
 
 
 #pos-body .sides .left-side .columns {
-  display: flex;
-  gap: 20px;
+    display: flex;
+    gap: 20px;
 }
 
 #pos-body .sides .left-side .columns .card-column {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .card {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 16px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  margin-bottom: 20px;
-  text-align: center;
-  width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 350px;
+    transition: 0.3s;
+
+    &:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: none;
+    }
 }
 
 .card img {
-  width: 100%;                /* Full width of card */
-  max-height: 180px;          /* Not too tall */
-  object-fit: cover;          /* Fill and crop nicely */
-  border-radius: 8px;
-  margin-bottom: 12px;
+    width: 250px;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+#pos-body .sides .right-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pos-body .sides .right-side .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+#pos-body .sides .right-side .form #item-discription,
+#pos-body .sides .right-side .form #item-price,
+#pos-body .sides .right-side .form #item-name{
+    height: 40px;
+    width: 300px;
+    padding: 0 15px;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    background-color: #fafafa;
+}
+
+#pos-body .sides .right-side .form button{
+    padding: 8px 15px;
+    background-color: #333;
+    color: var(--secondry-text-color);
+    border: none;
+    border-radius: 4px;
 }

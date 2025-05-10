@@ -4,35 +4,41 @@ import ItemModel from '../model/ItemModel.js'
 $('#add-item-btn').on('click', () => {
     let name = $('#item-name').val()
     let discription = $('#item-discription').val()
-    let image = $('#item-image').val()
+    let imageFile = $('#item-image')[0].files[0]
     let price = $('#item-price').val()
 
-    if (name == '' || discription == '' || image == '' || price == '') {
+    if (name == '' || discription == '' || !imageFile || price == '') {
         Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: "Something went wrong!"
+            text: "Please fill all fields!"
         });
         return;
     }
 
-    let data = new ItemModel(name, discription, image, price)
-    items.push(data)
-    console.log(data)
+    const reader = new FileReader()
+    reader.onload = () => {
+        const data = new ItemModel(name, discription, reader.result, price)
+        items.push(data)
+        console.log(data)
 
-    getAllItems()
+        getAllItems()
 
-    Swal.fire({
-        title: "Good job!",
-        text: "Item Added !",
-        icon: "success"
-    });
+        Swal.fire({
+            title: "Good job!",
+            text: "Item Added!",
+            icon: "success"
+        })
 
-    name = $('#item-name').val('')
-    discription = $('#item-discription').val('')
-    image = $('#item-image').val('')
-    price = $('#item-price').val('')
+        $('#item-name').val('')
+        $('#item-discription').val('')
+        $('#item-image').val('')
+        $('#item-price').val('')
+    }
+
+    reader.readAsDataURL(imageFile)
 });
+
 
 const getAllItems = () => {
   // Get column containers
@@ -54,7 +60,6 @@ const getAllItems = () => {
 
     const img = document.createElement('img');
     img.src = item.image;
-    img.alt = item.name;
 
     const description = document.createElement('p');
     description.textContent = item.discription;
