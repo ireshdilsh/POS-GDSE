@@ -78,6 +78,11 @@ $('#login-btn').on('click', () => {
       resetModal()
       document.getElementById('username').innerText = user.name;
       document.getElementById('useremail').innerText = user.email;
+
+      $('#landing-page').css('display', 'none')
+      $('#pos-body').css('display', 'block')
+      $('#right-side').css('display','none')
+
     } else {
       Swal.fire({
         icon: "error",
