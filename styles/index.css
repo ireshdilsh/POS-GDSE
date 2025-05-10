@@ -1114,33 +1114,42 @@ footer .footer-body .right-side .subcribe-btn button {
     width: 25px;
 }
 
-#pos-body .selection-btns{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin-top: 25px;
-}
-
-#pos-body .selection-btns button {
-    border: 1px solid #333;
-    height: 35px;
-    width: 100px;
-    border-radius: 20px;
-    color: var(--primary-text-color);
-    background-color: #fff;
-}
-
-
-#pos-body .selection-btns button:hover {
-    background-color: #f6f6f6;
-}
-
 #pos-body .sides {
+    margin-top: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 100px;
+    gap: 40px;
 }
 
+
+#pos-body .sides .left-side .columns {
+  display: flex;
+  gap: 20px;
+}
+
+#pos-body .sides .left-side .columns .card-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  text-align: center;
+  width: 350px;
+}
+
+.card img {
+  width: 100%;                /* Full width of card */
+  max-height: 180px;          /* Not too tall */
+  object-fit: cover;          /* Fill and crop nicely */
+  border-radius: 8px;
+  margin-bottom: 12px;
+}

@@ -35,39 +35,48 @@ $('#add-item-btn').on('click', () => {
 });
 
 const getAllItems = () => {
-    const cardsContainer = document.getElementById('cards');
-    cardsContainer.innerHTML = ''; // Clear previous cards if any
+  // Get column containers
+  const columns = [
+    document.getElementById('column-1'),
+    document.getElementById('column-2'),
+    document.getElementById('column-3')
+  ];
 
-    items.forEach((item) => {
-        const card = document.createElement('div');
-        card.className = 'card';
+  // Clear old content
+  columns.forEach(col => col.innerHTML = '');
 
-        const title = document.createElement('h5');
-        title.textContent = item.name;
+  items.forEach((item, index) => {
+    const card = document.createElement('div');
+    card.className = 'card';
 
-        const img = document.createElement('img');
-        img.src = item.image;
-        img.alt = item.name;
+    const title = document.createElement('h5');
+    title.textContent = item.name;
 
-        const description = document.createElement('p');
-        description.textContent = item.discription;
+    const img = document.createElement('img');
+    img.src = item.image;
+    img.alt = item.name;
 
-        const price = document.createElement('p');
-        price.textContent = `Price: ${item.price}`;
+    const description = document.createElement('p');
+    description.textContent = item.discription;
 
-        const button = document.createElement('button');
-        button.textContent = 'Add To Cart';
-        button.onclick = () => {
-            // handle add to cart here
-            console.log(`${item.name} added to cart`);
-        };
+    const price = document.createElement('p');
+    price.textContent = `Price: ${item.price}`;
 
-        card.appendChild(title);
-        card.appendChild(img);
-        card.appendChild(description);
-        card.appendChild(price);
-        card.appendChild(button);
+    const button = document.createElement('button');
+    button.textContent = 'Add To Cart';
+    button.onclick = () => {
+      console.log(`${item.name} added to cart`);
+    };
 
-        cardsContainer.appendChild(card);
-    });
+    card.appendChild(title);
+    card.appendChild(img);
+    card.appendChild(description);
+    card.appendChild(price);
+    card.appendChild(button);
+
+    // Distribute to column: 0 -> col1, 1 -> col2, 2 -> col3, 3 -> col1, etc.
+    columns[index % 3].appendChild(card);
+    window.onload = getAllItems;
+  });
 };
+
