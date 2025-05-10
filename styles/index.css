@@ -1136,31 +1136,11 @@ footer .footer-body .right-side .subcribe-btn button {
     background-color: #f6f6f6;
 }
 
-#pos-body .body {
+#pos-body .sides {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 100px;
 }
 
-#pos-body .body .left-side .card{
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    width: 350px;
-}
-
-#pos-body .body .left-side .card img{
-    height: 200px;
-}
-
-#pos-body .body .left-side .card p{
- text-align: justify;
-}
-
-#pos-body .body .right-side .item-form{
-    width: 450px;
-    padding: 20px;
-}
