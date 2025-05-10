@@ -1063,18 +1063,16 @@ footer .footer-body .right-side .subcribe-btn button {
     font-weight: 600;
 }
 
-#offcanvasWithBothOptions {
-    padding: 25px;
+#pos-body .account {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 25px;
 }
 
-#offcanvasWithBothOptions h4 {
-    font-weight: 600;
-    margin-top: 10px;
-}
-
-#offcanvasWithBothOptions h5 {
+#pos-body .account h5 {
     margin-top: 25px;
-    font-weight: 600;
 }
 
 #pos-body .search-field-and-btn {
@@ -1136,10 +1134,11 @@ footer .footer-body .right-side .subcribe-btn button {
     text-align: center;
     width: 350px;
     transition: 0.3s;
-
+   
     &:hover {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         border: none;
+        
     }
 }
 

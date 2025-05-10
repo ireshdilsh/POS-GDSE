@@ -62,6 +62,9 @@ $('#login-btn').on('click', () => {
     document.getElementById('username').innerText = "Admin";
     document.getElementById('useremail').innerText = adminEmail;
 
+        $('#landing-page').css('display', 'none')
+        $('#pos-body').css('display','block')
+
   } else {
     // Check if user exists in users array
     let user = users.find(u => u.email === email && u.password === password);
