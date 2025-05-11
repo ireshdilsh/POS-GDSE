@@ -81,7 +81,7 @@ $('#login-btn').on('click', () => {
 
       $('#landing-page').css('display', 'none')
       $('#pos-body').css('display', 'block')
-      $('#right-side').css('display','none')
+      $('#right-side-form').css('display','none')
 
     } else {
       Swal.fire({
