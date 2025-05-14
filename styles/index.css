@@ -1109,7 +1109,6 @@ footer .footer-body .right-side .subcribe-btn button {
     gap: 40px;
 }
 
-
 #pos-body .sides .left-side .columns {
     display: flex;
     gap: 20px;
@@ -1134,11 +1133,11 @@ footer .footer-body .right-side .subcribe-btn button {
     text-align: center;
     width: 350px;
     transition: 0.3s;
-   
+
     &:hover {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         border: none;
-        
+
     }
 }
 
@@ -1149,13 +1148,13 @@ footer .footer-body .right-side .subcribe-btn button {
     margin-bottom: 12px;
 }
 
-#pos-body .sides .right-side{
+#pos-body .sides .right-side {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#pos-body .sides .right-side .form{
+#pos-body .sides .right-side .form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1168,7 +1167,7 @@ footer .footer-body .right-side .subcribe-btn button {
 
 #pos-body .sides .right-side .form #item-discription,
 #pos-body .sides .right-side .form #item-price,
-#pos-body .sides .right-side .form #item-name{
+#pos-body .sides .right-side .form #item-name {
     height: 40px;
     width: 300px;
     padding: 0 15px;
@@ -1178,7 +1177,7 @@ footer .footer-body .right-side .subcribe-btn button {
     background-color: #fafafa;
 }
 
-#pos-body .sides .right-side .form button{
+#pos-body .sides .right-side .form button {
     padding: 8px 15px;
     background-color: #333;
     color: var(--secondry-text-color);
