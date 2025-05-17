@@ -69,8 +69,11 @@ const getAllItems = () => {
 
     const button = document.createElement('button');
     button.textContent = 'Add To Cart';
+
+    let count = 0
     button.onclick = () => {
       console.log(`${item.name} added to cart`);
+      console.log(index+1);
     };
 
     card.appendChild(title);
