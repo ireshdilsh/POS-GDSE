@@ -1,5 +1,7 @@
-import { items } from '../db/db.js';
+import { items, orders, users } from '../db/db.js';
+import { cartdetails } from '../db/db.js';
 import ItemModel from '../model/ItemModel.js'
+import OrdersModel from '../model/OrdersModel.js';
 
 $('#add-item-btn').on('click', () => {
     let name = $('#item-name').val()
@@ -70,10 +72,31 @@ const getAllItems = () => {
     const button = document.createElement('button');
     button.textContent = 'Add To Cart';
 
-    let count = 0
     button.onclick = () => {
-      console.log(`${item.name} added to cart`);
-      console.log(index+1);
+  
+      const row = document.createElement('tr');
+
+       const nameCell = document.createElement('td');
+       nameCell.textContent = item.name;
+
+       const priceCell = document.createElement('td');
+       priceCell.textContent = item.price;
+
+       //let email = $('#useremail').val()
+       
+       let email = $('#useremail').getText()
+       console.log(email);
+       
+       
+       const data = new OrdersModel(email,item.name,item.price)
+       orders.push(data)
+       console.log(orders);
+       
+       row.appendChild(nameCell);
+       row.appendChild(priceCell);
+
+       document.getElementById('tBody').appendChild(row);
+  
     };
 
     card.appendChild(title);
@@ -82,9 +105,24 @@ const getAllItems = () => {
     card.appendChild(price);
     card.appendChild(button);
 
-    // Distribute to column: 0 -> col1, 1 -> col2, 2 -> col3, 3 -> col1, etc.
     columns[index % 3].appendChild(card);
     window.onload = getAllItems;
   });
 };
 
+$('#addOrder').on('click',()=>{
+  if (orders.length === 0) {
+     Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Please fill all fields!"
+        });
+        return;
+  }
+  Swal.fire({
+      title: "Success!",
+      text: "You have successfully Place Order.",
+      icon: "success"
+    });
+  $('#tBody').empty()
+})

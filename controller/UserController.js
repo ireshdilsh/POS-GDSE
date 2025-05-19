@@ -15,6 +15,16 @@ $('#signup-btn').on('click', () => {
     return;
   }
 
+  let user = users.find(u => u.email === email);
+  if (user) {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "This Email Address Alredy Used !"
+    });
+    return;
+  }
+
   let data = new UserModel(name, email, password)
   users.push(data)
   Swal.fire({
@@ -50,7 +60,6 @@ $('#login-btn').on('click', () => {
     return;
   }
 
-  // Check if admin
   if (email === adminEmail && password === adminPassword) {
     Swal.fire({
       title: "Welcome Admin!",
@@ -58,12 +67,12 @@ $('#login-btn').on('click', () => {
       icon: "success"
     });
     resetModal()
-    // Optional: Set admin panel visibility or redirect
     document.getElementById('username').innerText = "Admin";
     document.getElementById('useremail').innerText = adminEmail;
 
         $('#landing-page').css('display', 'none')
         $('#pos-body').css('display','block')
+        $('#right-side-form').css('display','block')
 
   } else {
     // Check if user exists in users array
@@ -101,3 +110,8 @@ const resetModal = () => {
   modal.hide();
 }
 
+ $('#logout-btn').on('click',()=>{
+            $('#pos-body').css('display','none')
+            $('#landing-page').css('display','block')
+            $('#tBody').empty()
+  })

@@ -731,6 +731,7 @@
         <div class="account">
             <h5 id="useremail"></h5>
             <p id="username"></p>
+            <button id="logout-btn">Log Out</button>
         </div>
 
         <h1>Buy Your Next Apple Device</h1>
@@ -757,13 +758,24 @@
 
             <div class="right-side" id="right-side-form">
                 <div id="item-form" class="form">
-                    <h4>Add New Products</h4>
                     <input id="item-name" type="text" placeholder="title">
                     <input id="item-image" accept="image/*" type="file" placeholder="image">
                     <input id="item-discription" type="text" placeholder="discription">
-                    <input id="item-price" type="text" placeholder="price">
-                    <button id="add-item-btn">Add New Item</button>
+                    <input id="item-price" type="number" placeholder="price">
+                    <button id="add-item-btn">Add Item</button>
                 </div>
+            </div>
+            <div class="checkout-page">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Item Name</th>
+                            <th scope="col">Item Price</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tBody"></tbody>
+                </table>
+                <button id="addOrder">Place Order</button>
             </div>
         </div>
     </section>

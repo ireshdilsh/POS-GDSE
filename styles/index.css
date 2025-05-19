@@ -1002,7 +1002,6 @@ footer .footer-body .middle-side-two {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100px;
 }
 
 footer .footer-body .middle-side h5,
@@ -1056,7 +1055,7 @@ footer .footer-body .right-side .subcribe-btn button {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 80px 120px;
+    padding: 40px 120px;
 }
 
 #pos-body h1 {
@@ -1105,6 +1104,7 @@ footer .footer-body .right-side .subcribe-btn button {
     margin-top: 35px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     gap: 40px;
 }
@@ -1133,12 +1133,17 @@ footer .footer-body .right-side .subcribe-btn button {
     text-align: center;
     width: 350px;
     transition: 0.3s;
-
     &:hover {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         border: none;
 
     }
+}
+
+.card p{
+    width: 330px;
+    padding: 10px;
+    text-align: center;
 }
 
 .card img {
@@ -1158,7 +1163,6 @@ footer .footer-body .right-side .subcribe-btn button {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     gap: 20px;
     padding: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -1181,6 +1185,42 @@ footer .footer-body .right-side .subcribe-btn button {
     padding: 8px 15px;
     background-color: #333;
     color: var(--secondry-text-color);
+    border: none;
+    border-radius: 4px;
+}
+
+#pos-body .sides .right-side .form #add-item-btn{
+    width: 100px;
+}
+
+.card button{
+    background-color: #333;
+    color: #fcfcfc;
+    border-radius: 5px;
+    padding: 5px 12px;
+    outline: none;
+    border: none;
+}
+
+#logout-btn{
+    background-color: #333;
+    color: #fcfcfc;
+    padding: 4px 8px;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+}
+
+.table{
+    width: 350px;
+    
+}
+
+#addOrder{
+    background-color: #333;
+    color: #fcfcfc;
+    padding: 5px 10px;
+    outline: none;
     border: none;
     border-radius: 4px;
 }
