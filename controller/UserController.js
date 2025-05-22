@@ -115,3 +115,5 @@ const resetModal = () => {
             $('#landing-page').css('display','block')
             $('#tBody').empty()
   })
+
+  

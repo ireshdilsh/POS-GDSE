@@ -1,5 +1,4 @@
-import { items, orders, users } from '../db/db.js';
-import { cartdetails } from '../db/db.js';
+import { items, orders } from '../db/db.js';
 import ItemModel from '../model/ItemModel.js'
 import OrdersModel from '../model/OrdersModel.js';
 
@@ -81,14 +80,13 @@ const getAllItems = () => {
 
        const priceCell = document.createElement('td');
        priceCell.textContent = item.price;
-
-       //let email = $('#useremail').val()
-       
-       let email = $('#useremail').getText()
-       console.log(email);
        
        
-       const data = new OrdersModel(email,item.name,item.price)
+      //  let email = $('#useremail').getText()
+      //  console.log(email);
+       let emails = document.getElementById("useremail").innerText
+       
+       const data = new OrdersModel(emails,item.name,item.price)
        orders.push(data)
        console.log(orders);
        
