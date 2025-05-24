@@ -1,7 +1,7 @@
 export default class OrdersModel{
-    constructor(email,itemName,price){
+    constructor(email,date,price){
         this.email = email
-        this.itemName = itemName
+        this.date = date
         this.price = price
     }
 }

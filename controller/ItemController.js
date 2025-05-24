@@ -40,16 +40,16 @@ $('#add-item-btn').on('click', () => {
     reader.readAsDataURL(imageFile)
 });
 
+let cartItems = [];     
+let totalPrice = 0;         
 
 const getAllItems = () => {
-  // Get column containers
   const columns = [
     document.getElementById('column-1'),
     document.getElementById('column-2'),
     document.getElementById('column-3')
   ];
 
-  // Clear old content
   columns.forEach(col => col.innerHTML = '');
 
   items.forEach((item, index) => {
@@ -72,29 +72,26 @@ const getAllItems = () => {
     button.textContent = 'Add To Cart';
 
     button.onclick = () => {
-  
       const row = document.createElement('tr');
 
-       const nameCell = document.createElement('td');
-       nameCell.textContent = item.name;
+      const nameCell = document.createElement('td');
+      nameCell.textContent = item.name;
 
-       const priceCell = document.createElement('td');
-       priceCell.textContent = item.price;
-       
-       
-      //  let email = $('#useremail').getText()
-      //  console.log(email);
-       let emails = document.getElementById("useremail").innerText
-       
-       const data = new OrdersModel(emails,item.name,item.price)
-       orders.push(data)
-       console.log(orders);
-       
-       row.appendChild(nameCell);
-       row.appendChild(priceCell);
+      const priceCell = document.createElement('td');
+      priceCell.textContent = item.price;
 
-       document.getElementById('tBody').appendChild(row);
-  
+      row.appendChild(nameCell);
+      row.appendChild(priceCell);
+
+      document.getElementById('tBody').appendChild(row);
+
+      totalPrice += parseFloat(item.price);
+      document.getElementById('priceLbl').textContent = `Total: ${totalPrice.toFixed(2)}`;
+
+      cartItems.push({
+        name: item.name,
+        price: parseFloat(item.price)
+      });
     };
 
     card.appendChild(title);
@@ -104,23 +101,35 @@ const getAllItems = () => {
     card.appendChild(button);
 
     columns[index % 3].appendChild(card);
-    window.onload = getAllItems;
   });
 };
 
-$('#addOrder').on('click',()=>{
-  if (orders.length === 0) {
-     Swal.fire({
-            icon: "error",
-            title: "Oops...",
-            text: "Please fill all fields!"
-        });
-        return;
-  }
-  Swal.fire({
-      title: "Success!",
-      text: "You have successfully Place Order.",
-      icon: "success"
+$('#addOrder').on('click', () => {
+  let email = document.getElementById("useremail").innerText;
+
+  if (cartItems.length === 0) {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Your cart is empty!"
     });
-  $('#tBody').empty()
-})
+    return;
+  }
+
+  const currentDate = new Date().toLocaleDateString();
+
+  const finalOrder = new OrdersModel(email, currentDate, totalPrice.toFixed(2));
+  orders.push(finalOrder); 
+  console.log(orders);
+
+  Swal.fire({
+    title: "Success!",
+    text: "You have successfully placed your order.",
+    icon: "success"
+  });
+
+  $('#tBody').empty();
+  document.getElementById('priceLbl').textContent = 'Total: 0.00';
+  cartItems = [];
+  totalPrice = 0;
+});
